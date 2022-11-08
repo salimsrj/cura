@@ -15739,6 +15739,7 @@ section.home-banner .banner-box .buttons ul li a.btn, section.home-banner .banne
   font-size: 16px;
   line-height: 26px;
   padding: 14px;
+  margin-bottom: 15px;
 }
 section.home-banner .banner-box .buttons ul li a.btn.btn-blue, section.home-banner .banner-box .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.home-banner .banner-box .buttons ul li a.btn-blue.button, section.home-banner .banner-box .buttons ul li .woocommerce-info a.btn-blue.button, .woocommerce-info section.home-banner .banner-box .buttons ul li a.btn-blue.button {
   color: #00AFFF;
@@ -15750,6 +15751,17 @@ section.home-banner .banner-box .buttons ul li a.btn.btn-green, section.home-ban
 }
 section.home-banner .banner-box .buttons ul li:last-child {
   margin-right: 0;
+}
+section.home-banner .banner-col {
+  position: relative;
+}
+section.home-banner .banner-col .banner-image {
+  max-width: 330px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  border-radius: 100px 0;
+  overflow: hidden;
 }
 
 section.who-we-are {
@@ -15786,7 +15798,7 @@ section.who-we-are .btn.btn-blue, section.who-we-are .wpcf7 input.btn-blue[type=
   padding: 14px;
 }
 
-section.our-expertise {
+section.featurs {
   min-height: 1000px;
   padding: 100px 0;
   background: url("../images/OurExpertiseBg.png");
@@ -15794,21 +15806,21 @@ section.our-expertise {
   background-repeat: no-repeat;
   background-position: right center;
 }
-section.our-expertise .expertise {
+section.featurs .expertise {
   display: flex;
   justify-content: flex-end;
 }
-section.our-expertise .content-box {
+section.featurs .content-box {
   width: 70%;
   color: #FFFFFF;
 }
-section.our-expertise .content-box h2.title, section.our-expertise .content-box .title.h2 {
+section.featurs .content-box h2.title, section.featurs .content-box .title.h2 {
   font-size: 55px;
   line-height: 65px;
   font-weight: 700;
   color: #FFFFFF;
 }
-section.our-expertise .content-box h2.title::after, section.our-expertise .content-box .title.h2::after {
+section.featurs .content-box h2.title::after, section.featurs .content-box .title.h2::after {
   content: "";
   width: 50px;
   height: 5px;
@@ -15816,43 +15828,88 @@ section.our-expertise .content-box h2.title::after, section.our-expertise .conte
   display: block;
   margin-top: 30px;
 }
-section.our-expertise .content-box .content {
+section.featurs .content-box .content {
   padding: 60px 0;
   max-width: 700px;
 }
-section.our-expertise .two-box-with-icon {
+section.featurs .two-box-with-icon {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-section.our-expertise .two-box-with-icon .box {
+section.featurs .two-box-with-icon .box {
   width: 422px;
   padding: 50px;
 }
-section.our-expertise .two-box-with-icon .box h3.title, section.our-expertise .two-box-with-icon .box .title.h3 {
+section.featurs .two-box-with-icon .box h3.title, section.featurs .two-box-with-icon .box .title.h3 {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 15px;
 }
-section.our-expertise .two-box-with-icon .box .icon {
+section.featurs .two-box-with-icon .box .icon {
   width: 38px;
   margin-bottom: 20px;
 }
-section.our-expertise .two-box-with-icon .box.boxstyle-1 {
+section.featurs .two-box-with-icon .box.boxstyle-1 {
   background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
   box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
   border-radius: 100px 0px;
 }
-section.our-expertise .two-box-with-icon .box.boxstyle-1 a.learn-more {
+section.featurs .two-box-with-icon .box.boxstyle-1 a.learn-more {
   color: #00AFFF;
 }
-section.our-expertise .two-box-with-icon .box.boxstyle-2 {
+section.featurs .two-box-with-icon .box.boxstyle-2 {
   background: #FFFFFF;
   opacity: 0.85;
   border-radius: 0px 100px 0px 100px;
 }
-section.our-expertise .two-box-with-icon .box.boxstyle-2 a.learn-more {
+section.featurs .two-box-with-icon .box.boxstyle-2 a.learn-more {
   color: #31E1A2;
+}
+
+section.testimonials {
+  padding: 100px 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+  opacity: 0.7;
+}
+section.testimonials h2.title, section.testimonials .title.h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #353535;
+}
+section.testimonials h2.title span, section.testimonials .title.h2 span {
+  background: linear-gradient(165deg, #00afff 36.19%, #31e1a2 53.22%), linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.testimonials .title-container {
+  max-width: 400px;
+}
+section.testimonials .testimonial .author-img {
+  width: 65px;
+  border-radius: 50%;
+}
+section.testimonials .testimonial .item {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  padding: 20px 0 10px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+  border-left: 0;
+  border-right: 0;
+}
+section.testimonials .testimonial .item .content {
+  width: calc(100% - 65px);
+  padding-left: 25px;
+}
+section.testimonials .testimonial .item .content h3.author-info, section.testimonials .testimonial .item .content .author-info.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 footer.footer {
