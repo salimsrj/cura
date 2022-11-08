@@ -173,6 +173,109 @@ section.home-banner {
     }
 }
 
+section.who-we-are {
+    padding: 80px 0;
+    min-height: 780px;
+    h2.title {
+        font-size: 55px;
+        line-height: 65px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        span {
+            color: #c4c4c4;
+        }
+        &::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #353535;
+            display: block;
+            margin-top: 15px;
+        }
+    }
+    .button-container {
+        margin-top: 50px;
+    }
+    .btn.btn-blue {
+        background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+        border-radius: 5px;
+        color: $white;
+        text-transform: uppercase;
+        min-width: 250px;
+        text-align: center;
+        padding: 14px;
+    }
+}
+
+section.our-expertise {
+    min-height: 1000px;
+    padding: 100px 0;
+    background: url('../images/OurExpertiseBg.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    .expertise {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content-box {
+        width: 70%;
+        color: $white;
+        h2.title {
+            font-size: 55px;
+            line-height: 65px;
+            font-weight: 700;
+            color: $white;
+            &::after {
+                content: '';
+                width: 50px;
+                height: 5px;
+                background-color: $white;
+                display: block;
+                margin-top: 30px;
+            }
+        }
+        .content {
+            padding: 60px 0;
+            max-width: 700px;
+        }
+    }
+    .two-box-with-icon {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .box {
+            width: 422px;
+            padding: 50px;
+            h3.title {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 15px;
+            }
+            .icon {
+                width: 38px;
+                margin-bottom: 20px;
+            }
+            &.boxstyle-1 {
+                background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
+                box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
+                border-radius: 100px 0px;
+                a.learn-more {
+                    color: $blue;
+                }
+            }
+            &.boxstyle-2 {
+                background: #FFFFFF;
+                opacity: 0.85;
+                border-radius: 0px 100px 0px 100px;
+                a.learn-more {
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
 footer.footer {
     padding: 80px 0;
     .footer-logo {

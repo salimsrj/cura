@@ -34,8 +34,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="contact">
 						<ul>
 							<li><a href="#"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/linkedIn.png" alt=""></span><span>Contact</span></a></li>
-							<li><a href="#"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/phone.png" alt=""></span><span>603 235 0312</span></a></li>
-							<li><a href="#"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/mail.png" alt=""></span><span>cgreen@curarecruiting.com</span></a></li>
+							<li><a href="tel:6032350312"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/phone.png" alt=""></span><span>603 235 0312</span></a></li>
+							<li><a href="mailto:cgreen@curarecruiting.com"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/mail.png" alt=""></span><span>cgreen@curarecruiting.com</span></a></li>
 							<li><a href="#"><span class="icon"></span><span><storng>Log in</strong></span></a></li>
 						</ul>
 					</div>
