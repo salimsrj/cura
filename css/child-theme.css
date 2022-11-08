@@ -15912,6 +15912,139 @@ section.testimonials .testimonial .item .content h3.author-info, section.testimo
   margin-bottom: 30px;
 }
 
+section.fill-retention {
+  padding: 100px 0;
+}
+section.fill-retention .image-box {
+  position: relative;
+}
+section.fill-retention .image-container {
+  max-width: 400px;
+  position: absolute;
+  top: -300px;
+}
+section.fill-retention .fill-retention-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+section.fill-retention .fill-retention-box .fill {
+  width: 50%;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 700;
+}
+section.fill-retention .fill-retention-box .retention {
+  width: 50%;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 700;
+}
+section.fill-retention .fill-retention-box .percentage {
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+section.fill-retention .content-box .content {
+  max-width: 460px;
+}
+section.fill-retention .content-box h2.title, section.fill-retention .content-box .title.h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  max-width: 350px;
+  margin-bottom: 50px;
+}
+section.fill-retention .content-box h2.title::after, section.fill-retention .content-box .title.h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #353535;
+  display: block;
+  margin-top: 22px;
+}
+section.fill-retention .content-box h2.title span, section.fill-retention .content-box .title.h2 span {
+  color: #C4C4C4;
+}
+
+section.text-with-btn {
+  padding: 80px 0;
+  background: url("../images/background-style-1.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position-y: 180px;
+}
+section.text-with-btn .buttons {
+  margin-bottom: 140px;
+}
+section.text-with-btn .buttons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section.text-with-btn .buttons ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+section.text-with-btn .buttons ul li:last-child {
+  margin-right: 0;
+}
+section.text-with-btn .buttons ul li a.btn, section.text-with-btn .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message section.text-with-btn .buttons ul li a.button, section.text-with-btn .buttons ul li .woocommerce-info a.button, .woocommerce-info section.text-with-btn .buttons ul li a.button {
+  display: inline-block;
+  min-width: 280px;
+  padding: 15px;
+  font-size: 18px;
+}
+section.text-with-btn .buttons ul li a.btn.btn-blue, section.text-with-btn .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.text-with-btn .buttons ul li a.btn-blue.button, section.text-with-btn .buttons ul li .woocommerce-info a.btn-blue.button, .woocommerce-info section.text-with-btn .buttons ul li a.btn-blue.button {
+  border: 1px solid #00AFFF;
+  color: #00AFFF;
+}
+section.text-with-btn .buttons ul li a.btn.btn-green, section.text-with-btn .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-green.button, .woocommerce-notices-wrapper .woocommerce-message section.text-with-btn .buttons ul li a.btn-green.button, section.text-with-btn .buttons ul li .woocommerce-info a.btn-green.button, .woocommerce-info section.text-with-btn .buttons ul li a.btn-green.button {
+  border: 1px solid #31E1A2;
+  color: #31E1A2;
+}
+section.text-with-btn .two-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.text-with-btn .two-box .left-box {
+  width: 300px;
+}
+section.text-with-btn .two-box .left-box h3.title, section.text-with-btn .two-box .left-box .title.h3 {
+  font-size: 24px;
+  line-height: 34px;
+}
+section.text-with-btn .two-box .right-box {
+  width: calc(100% - 300px);
+}
+section.text-with-btn .two-box .right-box h2.title, section.text-with-btn .two-box .right-box .title.h2 {
+  font-size: 55px;
+  line-height: 65px;
+  max-width: 550px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+section.text-with-btn .two-box .right-box h2.title::after, section.text-with-btn .two-box .right-box .title.h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #353535;
+  display: block;
+  margin-top: 22px;
+}
+section.text-with-btn .two-box .right-box h2.title span, section.text-with-btn .two-box .right-box .title.h2 span {
+  color: #C4C4C4;
+}
+section.text-with-btn .two-box .right-box .content-box {
+  display: flex;
+  justify-content: flex-end;
+}
+section.text-with-btn .two-box .right-box .content {
+  max-width: 400px;
+  text-align: right;
+}
+
 footer.footer {
   padding: 80px 0;
 }

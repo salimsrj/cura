@@ -121,5 +121,68 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 
+
+<section class="fill-retention" style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/building-bg.png); background-size: cover; background-position: center center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-box">
+                    <div class="image-container">
+                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/fill-rate.png" alt="Fill Rate">
+                    </div>
+                </div>                
+            </div>
+            <div class="col-md-6">
+                <div class="fill-retention-box">
+                    <div class="fill">
+                        <div class="percentage">80%</div>
+                        <span>Fill<br>Rate</span>
+                    </div>
+                    <div class="retention">
+                        <div class="percentage">96%</div>
+                        <span>Client<br>Retention</span>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h2 class="title"><span>Cura</span> makes it simple</h2>
+                    <div class="content">
+                        <p>Every business needs a highly-qualified and engaging recruiter who understands their business and operations to find talent.</p>
+                        <p> But finding the right person can be challenging! Cura Recruiting makes it effortless working as the bridge between professionals and industries. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-with-btn">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="two-box">
+                    <div class="left-box">
+                        <h3 class="title">What exactly are you looking for?</h3>
+                    </div>
+                    <div class="right-box">
+                        <div class="buttons">
+                            <ul>
+                                <li><a class="btn btn-blue" href="#">Recruiting</a></li>
+                                <li><a class="btn btn-green" href="#">Accounting & Finance</a></li>
+                            </ul>
+                        </div>
+                        <h2 class="title"><span>Cura</span> At Work - State by State</h2>
+                        <div class="content-box">
+                            <div class="content">
+                                <p>Are you looking to stay close to home, or are you itching to relocate? We are expanding our reach as we continue work with a variety of exciting and dynamic organizations. </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 get_footer();
