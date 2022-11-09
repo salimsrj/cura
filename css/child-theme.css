@@ -16045,6 +16045,36 @@ section.text-with-btn .two-box .right-box .content {
   text-align: right;
 }
 
+section.contact {
+  min-height: 480px;
+  padding: 100px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+section.contact h2.title, section.contact .title.h2 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 65px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+section.contact h3.sub-title, section.contact .sub-title.h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+section.contact a.btn.btn-contact, section.contact .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.contact a.btn-contact.button, section.contact .woocommerce-info a.btn-contact.button, .woocommerce-info section.contact a.btn-contact.button {
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  width: 380px;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
 footer.footer {
   padding: 80px 0;
 }
