@@ -395,10 +395,20 @@ section.fill-retention {
 
 section.text-with-btn {
     padding: 80px 0;
-    background: url('../images/background-style-1.png');
+    // background: url('../images/background-style-1.png');
     background-size: 55%;
     background-repeat: no-repeat;
     background-position-y: 180px;
+    position: relative;
+    .background {
+        background: url('../images/background-style-1.png');
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 30%;
+    }
     .buttons {
         margin-bottom: 140px;
         ul {
@@ -540,6 +550,20 @@ footer.footer {
                 padding-bottom: 10px;
                 a {
                     color: $theme-black;
+                }
+                &.menu-item-has-children {
+                    &>a {
+                        font-weight: 700;
+                    }
+                }
+                &>ul {
+                    display: inline;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: inline-block;
+                        margin-left: 15px;
+                    }
                 }
             }
         }

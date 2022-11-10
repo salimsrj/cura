@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<div class="widget">
 					<div class="contact">
 						<ul>
@@ -42,14 +42,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-5">
 				<div class="footer-widget">
 					<div class="footer-menu">
 						<ul>
 							<li><a href="#">Who We Are</a></li>
 							<li><a href="#">Our Services</a></li>
-							<li><a href="#">CURA Search</a></li>
-							<li><a href="#">CURA Accounting & Finance</a></li>
+							<li class="menu-item-has-children"><a href="#">CURA Search</a>
+							<ul>
+								<li><a href="#">Find A Career</a></li>
+								<li><a href="#">Find Staff</a></li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children"><a href="#">CURA Accounting & Finance</a>
+							<ul>
+								<li><a href="#">Find A Career</a></li>
+								<li><a href="#">Find Staff</a></li>
+							</ul>
+						</li>
 						</ul>
 					</div>
 				</div>

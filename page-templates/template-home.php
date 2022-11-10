@@ -182,6 +182,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
+    <div class="background"></div>
 </section>
 
 <section class="contact"  style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/contact-bg.png); background-size: cover; background-position: center center;">
