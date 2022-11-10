@@ -15648,6 +15648,7 @@ figure.woocommerce-product-gallery__wrapper {
 }
 body {
   font-family: "Sansation";
+  color: #353535;
 }
 body p {
   font-size: 16px;
@@ -15655,6 +15656,12 @@ body p {
 }
 body a {
   text-decoration: none;
+}
+body .color-white {
+  color: #FFFFFF;
+}
+body nav.navbar {
+  z-index: 999;
 }
 body nav.navbar ul.navbar-nav li a.nav-link {
   font-size: 14px;
@@ -16084,6 +16091,219 @@ section.contact a.btn.btn-contact, section.contact .woocommerce-notices-wrapper 
   color: #FFFFFF;
 }
 
+.inner-banner.style-1 {
+  position: relative;
+}
+.inner-banner.style-1 .banner-content {
+  min-height: 675px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.inner-banner.style-1 .banner-content .left-box {
+  width: 35%;
+  z-index: 3;
+}
+.inner-banner.style-1 .banner-content .right-box {
+  width: 65%;
+  z-index: 3;
+}
+.inner-banner.style-1 .banner-content span.pre-title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #C4C4C4;
+  margin-bottom: 22px;
+  display: block;
+}
+.inner-banner.style-1 .banner-content span.pre-title::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #C4C4C4;
+  display: block;
+  margin-top: 20px;
+}
+.inner-banner.style-1 .banner-content h2.title, .inner-banner.style-1 .banner-content .title.h2 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 65px;
+  max-width: 275px;
+}
+.inner-banner.style-1 .banner-content h2.title span, .inner-banner.style-1 .banner-content .title.h2 span {
+  color: #C4C4C4;
+}
+.inner-banner.style-1 .banner-content h3.sub-title, .inner-banner.style-1 .banner-content .sub-title.h3 {
+  font-size: 16px;
+  line-height: 26px;
+}
+.inner-banner.style-1 .banner-content h3.sub-title::after, .inner-banner.style-1 .banner-content .sub-title.h3::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #FFFFFF;
+  display: block;
+  margin-top: 20px;
+}
+.inner-banner.style-1 .banner-content .content {
+  padding-top: 15px;
+  max-width: 450px;
+  margin-bottom: 70px;
+}
+.inner-banner.style-1 .banner-content .buttons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.inner-banner.style-1 .banner-content .buttons ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+.inner-banner.style-1 .banner-content .buttons ul li:last-child {
+  margin-right: 0;
+}
+.inner-banner.style-1 .banner-content .buttons ul li a.btn.btn-banner, .inner-banner.style-1 .banner-content .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-banner.button, .woocommerce-notices-wrapper .woocommerce-message .inner-banner.style-1 .banner-content .buttons ul li a.btn-banner.button, .inner-banner.style-1 .banner-content .buttons ul li .woocommerce-info a.btn-banner.button, .woocommerce-info .inner-banner.style-1 .banner-content .buttons ul li a.btn-banner.button {
+  display: inline-block;
+  min-width: 250px;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  font-weight: 400;
+  padding: 14px;
+}
+.inner-banner.style-1 .banner-content .buttons ul li a.btn.btn-banner:hover, .inner-banner.style-1 .banner-content .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-banner.button:hover, .woocommerce-notices-wrapper .woocommerce-message .inner-banner.style-1 .banner-content .buttons ul li a.btn-banner.button:hover, .inner-banner.style-1 .banner-content .buttons ul li .woocommerce-info a.btn-banner.button:hover, .woocommerce-info .inner-banner.style-1 .banner-content .buttons ul li a.btn-banner.button:hover {
+  background-color: #00AFFF;
+  color: #FFFFFF;
+}
+.inner-banner.style-1 .banner-content .buttons ul li:first-child a.btn.btn-banner, .inner-banner.style-1 .banner-content .buttons ul li:first-child .woocommerce-notices-wrapper .woocommerce-message a.btn-banner.button, .woocommerce-notices-wrapper .woocommerce-message .inner-banner.style-1 .banner-content .buttons ul li:first-child a.btn-banner.button, .inner-banner.style-1 .banner-content .buttons ul li:first-child .woocommerce-info a.btn-banner.button, .woocommerce-info .inner-banner.style-1 .banner-content .buttons ul li:first-child a.btn-banner.button {
+  background-color: #00AFFF;
+  color: #FFFFFF;
+}
+.inner-banner.style-1 .background {
+  height: calc(100% + 100px);
+  width: 65%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+section.three-col-text-video {
+  padding: 200px 0 100px 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+  opacity: 0.7;
+  z-index: 1;
+}
+section.three-col-text-video article {
+  max-width: 300px;
+}
+section.three-col-text-video article span.sl {
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 20px;
+  color: #C4C4C4;
+}
+section.three-col-text-video article h3.title, section.three-col-text-video article .title.h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #353535;
+  margin-bottom: 35px;
+}
+section.three-col-text-video article h3.title::after, section.three-col-text-video article .title.h3::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #00AFFF;
+  display: block;
+  margin-top: 20px;
+}
+section.three-col-text-video .video-container {
+  padding-top: 100px;
+}
+
+section.text-with-img .text-img-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  min-height: 570px;
+}
+section.text-with-img .text-img-box .content-box {
+  width: 55%;
+  position: relative;
+}
+section.text-with-img .text-img-box .content-box h2.title, section.text-with-img .text-img-box .content-box .title.h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+section.text-with-img .text-img-box .content-box h2.title::after, section.text-with-img .text-img-box .content-box .title.h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  display: block;
+  background-color: #353535;
+  margin-top: 20px;
+}
+section.text-with-img .text-img-box .content-box h3.subtitle, section.text-with-img .text-img-box .content-box .subtitle.h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #C4C4C4;
+  margin-bottom: 30px;
+}
+section.text-with-img .text-img-box .content-box .content {
+  max-width: 550px;
+  margin-bottom: 50px;
+}
+section.text-with-img .text-img-box .content-box .btn-img-box {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+section.text-with-img .text-img-box .content-box .btn-img-box .small-img {
+  max-width: 200px;
+  border-radius: 0 50px;
+  overflow: hidden;
+}
+section.text-with-img .text-img-box .content-box .btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.text-with-img .text-img-box .content-box .btn-container .arrow {
+  height: 50px;
+  width: 27px;
+  background: url("../images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+section.text-with-img .text-img-box .content-box .btn-container a.btn.btn-blue, section.text-with-img .text-img-box .content-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.text-with-img .text-img-box .content-box .btn-container a.btn-blue.button, section.text-with-img .text-img-box .content-box .btn-container .woocommerce-info a.btn-blue.button, .woocommerce-info section.text-with-img .text-img-box .content-box .btn-container a.btn-blue.button {
+  font-size: 18px;
+  line-height: 28px;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  padding: 15px;
+  min-width: 250px;
+}
+section.text-with-img .text-img-box .content-box .btn-container a.btn.btn-blue:hover, section.text-with-img .text-img-box .content-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.text-with-img .text-img-box .content-box .btn-container a.btn-blue.button:hover, section.text-with-img .text-img-box .content-box .btn-container .woocommerce-info a.btn-blue.button:hover, .woocommerce-info section.text-with-img .text-img-box .content-box .btn-container a.btn-blue.button:hover {
+  color: #FFFFFF;
+  background-color: #00AFFF;
+}
+section.text-with-img .text-img-box .image-container {
+  width: calc(45% - 35px);
+}
+section.text-with-img .text-img-box .image-container .image-box {
+  height: 100%;
+  border-radius: 100px 0;
+}
+
 footer.footer {
   padding: 80px 0;
 }
@@ -16102,6 +16322,7 @@ footer.footer .contact ul {
 }
 footer.footer .contact ul li {
   padding-bottom: 10px;
+  display: inline-block;
 }
 footer.footer .contact ul li a {
   text-decoration: none;
