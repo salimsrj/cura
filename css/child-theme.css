@@ -15660,6 +15660,18 @@ body a {
 body .color-white {
   color: #FFFFFF;
 }
+body .btn-blue {
+  font-size: 18px;
+  line-height: 28px;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  padding: 15px;
+  min-width: 250px;
+}
+body .btn-blue:hover {
+  color: #FFFFFF;
+  background-color: #00AFFF;
+}
 body nav.navbar {
   z-index: 999;
 }
@@ -16302,6 +16314,40 @@ section.text-with-img .text-img-box .image-container {
 section.text-with-img .text-img-box .image-container .image-box {
   height: 100%;
   border-radius: 100px 0;
+}
+
+section.inner-contact {
+  padding: 80px 0;
+}
+section.inner-contact .contact-box ul {
+  list-style: none;
+  padding: 0;
+}
+section.inner-contact .contact-box ul li {
+  display: inline-block;
+  margin-right: 100px;
+}
+section.inner-contact .contact-box ul li:last-child {
+  margin-right: 0;
+}
+section.inner-contact .contact-box ul li span.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+section.inner-contact .contact-box ul li a.btn.btn-blue, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-blue.button, section.inner-contact .contact-box ul li .woocommerce-info a.btn-blue.button, .woocommerce-info section.inner-contact .contact-box ul li a.btn-blue.button {
+  background-color: #00AFFF;
+  color: #FFFFFF;
+}
+section.inner-contact .contact-box ul li a.btn.btn-blue:hover, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-blue.button:hover, section.inner-contact .contact-box ul li .woocommerce-info a.btn-blue.button:hover, .woocommerce-info section.inner-contact .contact-box ul li a.btn-blue.button:hover {
+  color: #00AFFF;
+  background-color: transparent;
+}
+section.inner-contact .contact-box ul li span.arrow {
+  width: 28px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 footer.footer {

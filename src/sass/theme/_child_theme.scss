@@ -65,6 +65,18 @@
         .color-white {
             color: $white;
         }
+        .btn-blue {
+            font-size: 18px;
+            line-height: 28px;
+            color: $blue;
+            border: 1px solid $blue;
+            padding: 15px;
+            min-width: 250px;
+            &:hover {
+                color: $white;
+                background-color: $blue;
+            }
+        }
         nav.navbar {
             z-index: 999;
             ul.navbar-nav {
@@ -729,6 +741,42 @@
                 .image-box {
                     height: 100%;
                     border-radius: 100px 0;
+                }
+            }
+        }
+    }
+    
+    section.inner-contact {
+        padding: 80px 0;
+        .contact-box {
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    margin-right: 100px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    span.title {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                    a.btn.btn-blue {
+                        background-color: $blue;
+                        color: $white;
+                        &:hover {
+                            color: $blue;
+                            background-color: transparent;
+                        }
+                    }
+                    span.arrow {
+                        width: 28px;
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
                 }
             }
         }

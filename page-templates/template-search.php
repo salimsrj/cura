@@ -114,6 +114,20 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
     </div>
 </section>
+<section class="inner-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-box">
+                    <ul>
+                        <li><span class="title">Let Cura get to know you</span> <span class="arrow"><img src="<?php echo get_stylesheet_directory_uri();?>/images/arrow-right.png" alt=""></span></li>
+                        <li><a href="#" class="btn btn-blue">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php
 get_footer();
