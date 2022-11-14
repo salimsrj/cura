@@ -55,6 +55,11 @@
     body {
         font-family: $fontSansation;
         color: #353535;
+        h2 {
+            font-size: 55px;
+            line-height: 56px;
+            font-weight: 700;
+        }
         p {
             font-size: 16px;
             line-height: 26px;
@@ -1020,6 +1025,176 @@
                 }
                 .accordion-body {
                     padding-left: 30px;
+                }
+            }
+        }
+    }
+    
+    section.inner-banner.style-3 {
+        .banner-content {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .content-box {
+                text-align: center;
+                max-width: 650px;
+                h2.title {
+                    font-size: 55px;
+                    line-height: 65px;
+                    font-weight: 700;
+                    color: $white;
+                    margin-bottom: 40px;
+                    span {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    
+    section.why-choose-us {
+        padding: 200px 0 100px;
+        .text-img-block {
+            .text-container {
+                width: 50%;
+                h2.title {
+                    font-size: 55px;
+                    line-height: 56px;
+                    font-weight: 700;
+                    margin-bottom: 70px;
+                    &::after {
+                        content: '';
+                        width: 50px;
+                        height: 5px;
+                        background: $theme-black;
+                        display: block;
+                        margin-top: 50px;
+                    }
+                    span {
+                        color: #c4c4c4;
+                    }
+                }
+            }
+            .buttons-container {
+                margin-top: 70px;
+                padding-bottom: 50px;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        display: inline-block;
+                        margin-right: 15px;
+                        a.btn.btn-blue {
+                            max-width: auto;
+                            min-width: 120px;
+                        }
+                    }
+                }
+            }
+            position: relative;
+            .left-image-box {
+                max-width: 450px;
+                border-radius: 100px 0;
+                overflow: hidden;
+                position: absolute;
+                right: 0;
+                top: -100px;
+            }
+        }
+        .our-featurs {
+            padding: 70px 0;
+            background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+            .featur-list {
+                max-width: 350px;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        width: 50%;
+                        text-align: center;
+                        padding: 20px 0;
+                        border: 1px solid;
+                        border-image-source: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+                    }
+                }
+            }
+        }
+        .contact-with-team {
+            padding: 200px 0;
+            min-height: 800px;
+            .search-contact {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .search-box {
+                    width: 450px;
+                    .box {
+                        width: 100%;
+                        max-width: 422px;
+                        padding: 50px;
+                        h3.title {
+                            font-size: 24px;
+                            line-height: 34px;
+                            margin-bottom: 15px;
+                        }
+                        .icon {
+                            width: 38px;
+                            margin-bottom: 20px;
+                        }
+                        &.boxstyle-1 {
+                            background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
+                            box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
+                            border-radius: 100px 0px;
+                            a.learn-more {
+                                color: $blue;
+                            }
+                        }
+                        &.boxstyle-2 {
+                            background: #FFFFFF;
+                            opacity: 0.85;
+                            border-radius: 0px 100px 0px 100px;
+                            a.learn-more {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+                .contact-box {
+                    width: calc(100% - 450px);
+                    color: $white;
+                    max-width: 650px;
+                    padding-left: 50px;
+                    h3.contact-title {
+                        font-size: 55px;
+                        line-height: 65px;
+                        color: $white;
+                        font-weight: 700;
+                        margin-bottom: 50px;
+                        &::after {
+                            content: '';
+                            width: 55px;
+                            height: 5px;
+                            background: $white;
+                            display: block;
+                            margin-top: 40px;
+                        }
+                        span {
+                            color: $blue;
+                        }
+                    }
+                    .content {
+                        margin-bottom: 65px;
+                    }
+                    a.btn.btn-contact {
+                        background: linear-gradient(150.67deg, #00afff 13.27%, #31e1a2 105.19%);
+                        border-radius: 5px;
+                        width: 230px;
+                        padding: 15px;
+                        color: $white;
+                    }
                 }
             }
         }

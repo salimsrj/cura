@@ -15650,6 +15650,11 @@ body {
   font-family: "Sansation";
   color: #353535;
 }
+body h2, body .h2 {
+  font-size: 55px;
+  line-height: 56px;
+  font-weight: 700;
+}
 body p {
   font-size: 16px;
   line-height: 26px;
@@ -16581,6 +16586,174 @@ section.faqs .faq-box .accordion-item .accordion-button:focus {
 }
 section.faqs .faq-box .accordion-item .accordion-body {
   padding-left: 30px;
+}
+
+section.inner-banner.style-3 .banner-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.inner-banner.style-3 .banner-content .content-box {
+  text-align: center;
+  max-width: 650px;
+}
+section.inner-banner.style-3 .banner-content .content-box h2.title, section.inner-banner.style-3 .banner-content .content-box .title.h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+section.inner-banner.style-3 .banner-content .content-box h2.title span, section.inner-banner.style-3 .banner-content .content-box .title.h2 span {
+  color: #00AFFF;
+}
+
+section.why-choose-us {
+  padding: 200px 0 100px;
+}
+section.why-choose-us .text-img-block {
+  position: relative;
+}
+section.why-choose-us .text-img-block .text-container {
+  width: 50%;
+}
+section.why-choose-us .text-img-block .text-container h2.title, section.why-choose-us .text-img-block .text-container .title.h2 {
+  font-size: 55px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+section.why-choose-us .text-img-block .text-container h2.title::after, section.why-choose-us .text-img-block .text-container .title.h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #353535;
+  display: block;
+  margin-top: 50px;
+}
+section.why-choose-us .text-img-block .text-container h2.title span, section.why-choose-us .text-img-block .text-container .title.h2 span {
+  color: #c4c4c4;
+}
+section.why-choose-us .text-img-block .buttons-container {
+  margin-top: 70px;
+  padding-bottom: 50px;
+}
+section.why-choose-us .text-img-block .buttons-container ul {
+  list-style: none;
+  padding: 0;
+}
+section.why-choose-us .text-img-block .buttons-container ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+section.why-choose-us .text-img-block .buttons-container ul li a.btn.btn-blue, section.why-choose-us .text-img-block .buttons-container ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.why-choose-us .text-img-block .buttons-container ul li a.btn-blue.button, section.why-choose-us .text-img-block .buttons-container ul li .woocommerce-info a.btn-blue.button, .woocommerce-info section.why-choose-us .text-img-block .buttons-container ul li a.btn-blue.button {
+  max-width: auto;
+  min-width: 120px;
+}
+section.why-choose-us .text-img-block .left-image-box {
+  max-width: 450px;
+  border-radius: 100px 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+section.why-choose-us .our-featurs {
+  padding: 70px 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+}
+section.why-choose-us .our-featurs .featur-list {
+  max-width: 350px;
+}
+section.why-choose-us .our-featurs .featur-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.why-choose-us .our-featurs .featur-list ul li {
+  width: 50%;
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+}
+section.why-choose-us .contact-with-team {
+  padding: 200px 0;
+  min-height: 800px;
+}
+section.why-choose-us .contact-with-team .search-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box {
+  width: 450px;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box {
+  width: 100%;
+  max-width: 422px;
+  padding: 50px;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box h3.title, section.why-choose-us .contact-with-team .search-contact .search-box .box .title.h3 {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box .icon {
+  width: 38px;
+  margin-bottom: 20px;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box.boxstyle-1 {
+  background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
+  box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 100px 0px;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box.boxstyle-1 a.learn-more {
+  color: #00AFFF;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box.boxstyle-2 {
+  background: #FFFFFF;
+  opacity: 0.85;
+  border-radius: 0px 100px 0px 100px;
+}
+section.why-choose-us .contact-with-team .search-contact .search-box .box.boxstyle-2 a.learn-more {
+  color: #31E1A2;
+}
+section.why-choose-us .contact-with-team .search-contact .contact-box {
+  width: calc(100% - 450px);
+  color: #FFFFFF;
+  max-width: 650px;
+  padding-left: 50px;
+}
+section.why-choose-us .contact-with-team .search-contact .contact-box h3.contact-title, section.why-choose-us .contact-with-team .search-contact .contact-box .contact-title.h3 {
+  font-size: 55px;
+  line-height: 65px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+section.why-choose-us .contact-with-team .search-contact .contact-box h3.contact-title::after, section.why-choose-us .contact-with-team .search-contact .contact-box .contact-title.h3::after {
+  content: "";
+  width: 55px;
+  height: 5px;
+  background: #FFFFFF;
+  display: block;
+  margin-top: 40px;
+}
+section.why-choose-us .contact-with-team .search-contact .contact-box h3.contact-title span, section.why-choose-us .contact-with-team .search-contact .contact-box .contact-title.h3 span {
+  color: #00AFFF;
+}
+section.why-choose-us .contact-with-team .search-contact .contact-box .content {
+  margin-bottom: 65px;
+}
+section.why-choose-us .contact-with-team .search-contact .contact-box a.btn.btn-contact, section.why-choose-us .contact-with-team .search-contact .contact-box .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.why-choose-us .contact-with-team .search-contact .contact-box a.btn-contact.button, section.why-choose-us .contact-with-team .search-contact .contact-box .woocommerce-info a.btn-contact.button, .woocommerce-info section.why-choose-us .contact-with-team .search-contact .contact-box a.btn-contact.button {
+  background: linear-gradient(150.67deg, #00afff 13.27%, #31e1a2 105.19%);
+  border-radius: 5px;
+  width: 230px;
+  padding: 15px;
+  color: #FFFFFF;
 }
 
 footer.footer {
