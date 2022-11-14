@@ -15672,6 +15672,20 @@ body .btn-blue:hover {
   color: #FFFFFF;
   background-color: #00AFFF;
 }
+body .btn-blue-fill {
+  font-size: 18px;
+  line-height: 28px;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  padding: 15px;
+  min-width: 250px;
+  background-color: #00AFFF;
+  color: #FFFFFF;
+}
+body .btn-blue-fill:hover {
+  color: #00AFFF;
+  background-color: transparent;
+}
 body nav.navbar {
   z-index: 999;
 }
@@ -16348,6 +16362,225 @@ section.inner-contact .contact-box ul li span.arrow {
   width: 28px;
   display: inline-block;
   margin-left: 20px;
+}
+
+section.inner-banner.style-2 .banner-content {
+  padding: 100px 0;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+}
+section.inner-banner.style-2 .banner-content .content-box {
+  max-width: 420px;
+}
+section.inner-banner.style-2 .banner-content .content-box span.pre-title {
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+section.inner-banner.style-2 .banner-content .content-box h2.title, section.inner-banner.style-2 .banner-content .content-box .title.h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+section.inner-banner.style-2 .banner-content .content-box h2.title::after, section.inner-banner.style-2 .banner-content .content-box .title.h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  display: block;
+  background-color: #353535;
+  margin-top: 20px;
+}
+section.inner-banner.style-2 .banner-content .content-box .button-container {
+  margin-top: 50px;
+}
+
+section.steps {
+  padding: 50px 0 80px;
+}
+section.steps .section-content {
+  text-align: center;
+}
+section.steps .section-content h2.title, section.steps .section-content .title.h2 {
+  font-size: 55px;
+  text-align: center;
+}
+section.steps .section-content h2.title::after, section.steps .section-content .title.h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  display: block;
+  background-color: #353535;
+  margin: 20px auto;
+}
+section.steps .section-content .content {
+  padding: 15px 0px;
+}
+section.steps .tow-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+section.steps .tow-box .left-box {
+  width: 40%;
+}
+section.steps .tow-box .left-box .image-container {
+  border-radius: 0 100px 0 0;
+  overflow: hidden;
+}
+section.steps .tow-box .right-box {
+  width: calc(60% - 100px);
+}
+section.steps .tow-box .right-box .steps {
+  margin-bottom: 100px;
+}
+section.steps .tow-box .right-box .steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+section.steps .tow-box .right-box .steps ul li {
+  display: inline-block;
+  width: 33.3%;
+  border-right: 1px solid #00AFFF;
+  padding: 0 30px;
+}
+section.steps .tow-box .right-box .steps ul li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+section.steps .tow-box .right-box .steps ul li:first-child {
+  padding-left: 0;
+}
+section.steps .tow-box .right-box .steps ul li span.qty {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+section.steps .tow-box .right-box .steps ul li .step-text {
+  font-size: 28px;
+  line-height: 25px;
+  font-weight: 700;
+}
+section.steps .tow-box .right-box .candidates-testimonials h2.title, section.steps .tow-box .right-box .candidates-testimonials .title.h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #353535;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+section.steps .tow-box .right-box .candidates-testimonials h2.title span, section.steps .tow-box .right-box .candidates-testimonials .title.h2 span {
+  background: linear-gradient(165deg, #00afff 36.19%, #31e1a2 53.22%), linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.steps .tow-box .right-box .candidates-testimonials .testimonial .author-img {
+  width: 65px;
+  border-radius: 50%;
+}
+section.steps .tow-box .right-box .candidates-testimonials .testimonial .item {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  padding: 30px 0 20px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+  border-left: 0;
+  border-right: 0;
+}
+section.steps .tow-box .right-box .candidates-testimonials .testimonial .item .content {
+  width: calc(100% - 65px);
+  padding-left: 25px;
+}
+section.steps .tow-box .right-box .candidates-testimonials .testimonial .item .content h3.author-info, section.steps .tow-box .right-box .candidates-testimonials .testimonial .item .content .author-info.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+section.steps .bottom-text {
+  position: relative;
+  height: 200px;
+}
+section.steps .watermark {
+  width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  max-width: 75%;
+  vertical-align: middle;
+  left: 10%;
+}
+
+section.faqs {
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+  padding: 80px 0;
+}
+section.faqs .content-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+section.faqs .content-box h2.title, section.faqs .content-box .title.h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+section.faqs .content-box .btn-container ul {
+  list-style: none;
+  padding: 0;
+}
+section.faqs .content-box .btn-container ul li {
+  display: inline-block;
+}
+section.faqs .content-box .btn-container ul li a.btn.btn-blue-green, section.faqs .content-box .btn-container ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue-green.button, .woocommerce-notices-wrapper .woocommerce-message section.faqs .content-box .btn-container ul li a.btn-blue-green.button, section.faqs .content-box .btn-container ul li .woocommerce-info a.btn-blue-green.button, .woocommerce-info section.faqs .content-box .btn-container ul li a.btn-blue-green.button {
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 250px;
+  color: #FFFFFF;
+}
+section.faqs .content-box .btn-container ul li a.btn.btn-find-job, section.faqs .content-box .btn-container ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-find-job.button, .woocommerce-notices-wrapper .woocommerce-message section.faqs .content-box .btn-container ul li a.btn-find-job.button, section.faqs .content-box .btn-container ul li .woocommerce-info a.btn-find-job.button, .woocommerce-info section.faqs .content-box .btn-container ul li a.btn-find-job.button {
+  font-size: 24px;
+  line-height: 34px;
+  color: #00AFFF;
+  font-weight: 700;
+  padding: 15px 30px;
+}
+section.faqs .faq-box h3.faq-title, section.faqs .faq-box .faq-title.h3 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 70px;
+}
+section.faqs .faq-box .accordion-item {
+  background-color: transparent;
+  border-top: 1px solid #353535;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 15px 0;
+}
+section.faqs .faq-box .accordion-item:last-child {
+  border-bottom: 1px solid #353535;
+}
+section.faqs .faq-box .accordion-item button.accordion-button {
+  background: transparent;
+  padding-left: 0;
+}
+section.faqs .faq-box .accordion-item .accordion-button:focus {
+  box-shadow: none;
+  color: #353535;
+}
+section.faqs .faq-box .accordion-item .accordion-body {
+  padding-left: 30px;
 }
 
 footer.footer {
