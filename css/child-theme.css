@@ -15652,18 +15652,22 @@ body {
 }
 body h2, body .h2 {
   font-size: 55px;
-  line-height: 56px;
+  line-height: 65px;
   font-weight: 700;
 }
 body p {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 22.5px;
 }
 body a {
   text-decoration: none;
 }
 body .color-white {
   color: #FFFFFF;
+}
+body ul {
+  list-style: none;
+  padding: 0;
 }
 body .btn-blue {
   font-size: 18px;
@@ -15689,6 +15693,32 @@ body .btn-blue-fill {
 }
 body .btn-blue-fill:hover {
   color: #00AFFF;
+  background-color: transparent;
+}
+body .btn-green {
+  font-size: 18px;
+  line-height: 28px;
+  color: #31E1A2;
+  border: 1px solid #31E1A2;
+  padding: 15px;
+  min-width: 250px;
+}
+body .btn-green:hover {
+  color: #FFFFFF;
+  background-color: #31E1A2;
+}
+body .btn-green-fill {
+  font-size: 18px;
+  line-height: 28px;
+  color: #00AFFF;
+  border: 1px solid #31E1A2;
+  padding: 15px;
+  min-width: 250px;
+  background-color: #31E1A2;
+  color: #FFFFFF;
+}
+body .btn-green-fill:hover {
+  color: #31E1A2;
   background-color: transparent;
 }
 body nav.navbar {
@@ -16254,6 +16284,9 @@ section.three-col-text-video .video-container {
   padding-top: 100px;
 }
 
+section.text-with-img {
+  padding-bottom: 140px;
+}
 section.text-with-img .text-img-box {
   display: flex;
   flex-wrap: wrap;
@@ -16337,6 +16370,7 @@ section.text-with-img .text-img-box .image-container .image-box {
 
 section.inner-contact {
   padding: 80px 0;
+  border-top: 1px solid #00AFFF;
 }
 section.inner-contact .contact-box ul {
   list-style: none;
@@ -16355,13 +16389,15 @@ section.inner-contact .contact-box ul li span.title {
   font-size: 24px;
   line-height: 34px;
 }
-section.inner-contact .contact-box ul li a.btn.btn-blue, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-blue.button, section.inner-contact .contact-box ul li .woocommerce-info a.btn-blue.button, .woocommerce-info section.inner-contact .contact-box ul li a.btn-blue.button {
-  background-color: #00AFFF;
+section.inner-contact .contact-box ul li a.btn.btn-contact, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-contact.button, section.inner-contact .contact-box ul li .woocommerce-info a.btn-contact.button, .woocommerce-info section.inner-contact .contact-box ul li a.btn-contact.button {
   color: #FFFFFF;
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  padding: 15px 30px;
+  min-width: 350px;
 }
-section.inner-contact .contact-box ul li a.btn.btn-blue:hover, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-blue.button:hover, section.inner-contact .contact-box ul li .woocommerce-info a.btn-blue.button:hover, .woocommerce-info section.inner-contact .contact-box ul li a.btn-blue.button:hover {
-  color: #00AFFF;
-  background-color: transparent;
+section.inner-contact .contact-box ul li a.btn.btn-contact:hover, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-contact.button:hover, section.inner-contact .contact-box ul li .woocommerce-info a.btn-contact.button:hover, .woocommerce-info section.inner-contact .contact-box ul li a.btn-contact.button:hover {
+  opacity: 0.8;
 }
 section.inner-contact .contact-box ul li span.arrow {
   width: 28px;
@@ -16774,6 +16810,178 @@ section.why-choose-us .contact-with-team .search-contact .contact-box a.btn.btn-
   width: 230px;
   padding: 15px;
   color: #FFFFFF;
+}
+
+section.inner-banner.style-4 .banner-content {
+  min-height: 650px;
+  padding: 150px 0 60px;
+}
+section.inner-banner.style-4 .banner-content .content-box {
+  max-width: 50%;
+}
+section.inner-banner.style-4 .banner-content .content-box span.pre-title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #C4C4C4;
+  margin-bottom: 30px;
+  display: block;
+}
+section.inner-banner.style-4 .banner-content .content-box span.pre-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #C4C4C4;
+  margin-top: 25px;
+}
+section.inner-banner.style-4 .banner-content .content-box h2.title, section.inner-banner.style-4 .banner-content .content-box .title.h2 {
+  margin-bottom: 55px;
+}
+section.inner-banner.style-4 .banner-content .content-box h2.title span, section.inner-banner.style-4 .banner-content .content-box .title.h2 span {
+  color: #C4C4C4;
+}
+section.inner-banner.style-4 .banner-content .content-box .btns-container ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+section.inner-banner.style-4 .banner-content .content-box .btns-container ul li:last-child {
+  margin-right: 0;
+}
+section.inner-banner.style-4 .banner-img {
+  width: 40%;
+  max-width: 572px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section.three-col-text {
+  padding: 100px 0 150px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+}
+section.three-col-text article {
+  max-width: 300px;
+  z-index: 1;
+}
+section.three-col-text article span.sl {
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 20px;
+  color: #C4C4C4;
+}
+section.three-col-text article h3.title, section.three-col-text article .title.h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #353535;
+  margin-bottom: 35px;
+}
+section.three-col-text article h3.title::after, section.three-col-text article .title.h3::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #00AFFF;
+  display: block;
+  margin-top: 20px;
+}
+
+section.two-col-text-img {
+  padding: 150px 0;
+}
+section.two-col-text-img .two-col-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+section.two-col-text-img .two-col-box .first-col {
+  width: 365px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+section.two-col-text-img .two-col-box .first-col .image-box .image-container {
+  overflow: hidden;
+  height: 365px;
+}
+section.two-col-text-img .two-col-box .first-col .image-box:nth-child(odd) .image-container {
+  border-radius: 0 100px;
+}
+section.two-col-text-img .two-col-box .first-col .image-box:nth-child(even) .image-container {
+  border-radius: 100px 0;
+}
+section.two-col-text-img .two-col-box .second-col {
+  width: calc(100% - 415px);
+  display: flex;
+  flex-wrap: wrap;
+}
+section.two-col-text-img .two-col-box .second-col .content-box {
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+section.two-col-text-img .two-col-box .second-col .content-box .content {
+  max-width: 525px;
+}
+section.two-col-text-img .two-col-box .second-col .content-box .content::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #353535;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  width: 100%;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .image-box {
+  width: 365px;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .image-box .image-container {
+  height: 365px;
+  overflow: hidden;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .image-box .image-container img {
+  height: 100%;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .image-box:nth-child(odd) .image-container {
+  border-radius: 0 100px;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .image-box:nth-child(even) .image-container {
+  border-radius: 100px 0;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container {
+  width: calc(100% - 365px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container .arrow-container {
+  width: 25px;
+  height: 30px;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul {
+  text-align: right;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li {
+  margin-right: 20px;
+  display: inline-block;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li:last-child {
+  margin-right: 0;
+}
+section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li a.btn, section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li a.button, section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li .woocommerce-info a.button, .woocommerce-info section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container ul li a.button {
+  min-width: 120px;
 }
 
 footer.footer {

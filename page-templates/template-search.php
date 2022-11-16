@@ -82,7 +82,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 
-<section class="text-with-img"  style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/search.png); background-size: 100px; background-position: left top; background-repeat: no-repeat;">
+<section class="text-with-img"  style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/search.png); background-size: 100px; background-position: left bottom; background-repeat: no-repeat;">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -121,7 +121,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="contact-box">
                     <ul>
                         <li><span class="title">Let Cura get to know you</span> <span class="arrow"><img src="<?php echo get_stylesheet_directory_uri();?>/images/arrow-right.png" alt=""></span></li>
-                        <li><a href="#" class="btn btn-blue">CONTACT US</a></li>
+                        <li><a href="#" class="btn btn-contact">CONTACT US</a></li>
                     </ul>
                 </div>
             </div>
