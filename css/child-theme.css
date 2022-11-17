@@ -16984,6 +16984,146 @@ section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container
   min-width: 120px;
 }
 
+section.inner-banner.style-5 .banner-content {
+  height: 100vh;
+  min-height: 880px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.inner-banner.style-5 .banner-content .content-box {
+  text-align: center;
+}
+section.inner-banner.style-5 .banner-content .content-box h2.title, section.inner-banner.style-5 .banner-content .content-box .title.h2 {
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+section.inner-banner.style-5 .banner-content .content-box .btns-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section.inner-banner.style-5 .banner-content .content-box .btns-container ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+section.inner-banner.style-5 .banner-content .content-box .btns-container ul li:last-child {
+  margin-right: 0;
+}
+
+section.text-with-img {
+  padding: 100px 0;
+}
+section.text-with-img .content-img-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: space-between;
+}
+section.text-with-img .content-img-box .content-box {
+  width: calc(65% - 30px);
+  max-width: 700px;
+}
+section.text-with-img .content-img-box .content-box h2.title, section.text-with-img .content-img-box .content-box .title.h2 {
+  margin-bottom: 65px;
+}
+section.text-with-img .content-img-box .content-box h2.title span, section.text-with-img .content-img-box .content-box .title.h2 span {
+  color: #31E1A2;
+}
+section.text-with-img .content-img-box .image-box {
+  width: 30%;
+}
+section.text-with-img .content-img-box .image-box .image-container {
+  max-width: 410px;
+}
+
+section.three-col-text-with-bg {
+  padding: 100px 0 150px;
+}
+section.three-col-text-with-bg article {
+  max-width: 350px;
+  z-index: 1;
+  color: #FFFFFF;
+}
+section.three-col-text-with-bg article span.sl {
+  font-size: 16px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 20px;
+  color: #C4C4C4;
+}
+section.three-col-text-with-bg article h3.title, section.three-col-text-with-bg article .title.h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+section.three-col-text-with-bg article h3.title::after, section.three-col-text-with-bg article .title.h3::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #31E1A2;
+  display: block;
+  margin-top: 20px;
+}
+
+section.two-col-text {
+  padding: 100px 0;
+}
+section.two-col-text .box {
+  width: 422px;
+  padding: 50px;
+}
+section.two-col-text .box h3.title, section.two-col-text .box .title.h3 {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+section.two-col-text .box .icon {
+  width: 38px;
+  margin-bottom: 20px;
+}
+section.two-col-text .box.boxstyle-1 {
+  background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
+  box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 100px 0px;
+}
+section.two-col-text .box.boxstyle-1 a.learn-more {
+  color: #31E1A2;
+}
+section.two-col-text .box.boxstyle-2 {
+  background: #FFFFFF;
+  opacity: 0.85;
+  border-radius: 0px 100px 0px 100px;
+}
+section.two-col-text .box.boxstyle-2 a.learn-more {
+  color: #31E1A2;
+}
+section.two-col-text .content-box {
+  max-width: 650px;
+}
+section.two-col-text .content-box h2.title, section.two-col-text .content-box .title.h2 {
+  margin-bottom: 50px;
+}
+section.two-col-text .content-box h2.title span, section.two-col-text .content-box .title.h2 span {
+  color: #31E1A2;
+}
+section.two-col-text .content-box .content {
+  margin-bottom: 70px;
+}
+section.two-col-text a.btn.btn-contact, section.two-col-text .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.two-col-text a.btn-contact.button, section.two-col-text .woocommerce-info a.btn-contact.button, .woocommerce-info section.two-col-text a.btn-contact.button {
+  color: #FFFFFF;
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  padding: 15px 30px;
+  min-width: 350px;
+}
+section.two-col-text a.btn.btn-contact:hover, section.two-col-text .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.two-col-text a.btn-contact.button:hover, section.two-col-text .woocommerce-info a.btn-contact.button:hover, .woocommerce-info section.two-col-text a.btn-contact.button:hover {
+  opacity: 0.8;
+}
+
 footer.footer {
   padding: 80px 0;
 }

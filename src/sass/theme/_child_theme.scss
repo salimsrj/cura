@@ -1445,6 +1445,152 @@
         }
     }
     
+    section.inner-banner.style-5 {
+        .banner-content {
+            height: 100vh;
+            min-height: 880px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .content-box {
+                text-align: center;
+                h2.title {
+                    color: $white;
+                    margin-bottom: 80px;
+                }
+                .btns-container {
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            display: inline-block;
+                            margin-right: 30px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    section.text-with-img {
+        padding: 100px 0;
+        .content-img-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            justify-content: space-between;
+            .content-box {
+                width: calc(65% - 30px);
+                max-width: 700px;
+                h2.title {
+                    margin-bottom: 65px;
+                    span {
+                        color: $green;
+                    }
+                }
+            }
+            .image-box {
+                width: 30%;
+                .image-container {
+                    max-width: 410px;
+                }
+            }
+        }
+    }
+    
+    section.three-col-text-with-bg {
+        padding: 100px 0 150px;
+        article {
+            max-width: 350px;
+            z-index: 1;
+            color: $white;
+            span.sl {
+                font-size: 16px;
+                line-height: 26px;
+                display: block;
+                margin-bottom: 20px;
+                color: $light-gray;
+            }
+            h3.title {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: 35px;
+                &::after {
+                    content: "";
+                    width: 60px;
+                    height: 1px;
+                    background-color: $green;
+                    display: block;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    
+    section.two-col-text {
+        padding: 100px 0;
+        .box {
+            width: 422px;
+            padding: 50px;
+            h3.title {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+            .icon {
+                width: 38px;
+                margin-bottom: 20px;
+            }
+            &.boxstyle-1 {
+                background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
+                box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
+                border-radius: 100px 0px;
+                a.learn-more {
+                    color: $green;
+                }
+            }
+            &.boxstyle-2 {
+                background: #FFFFFF;
+                opacity: 0.85;
+                border-radius: 0px 100px 0px 100px;
+                a.learn-more {
+                    color: $green;
+                }
+            }
+        }
+        .content-box {
+            max-width: 650px;
+            h2.title {
+                margin-bottom: 50px;
+                span {
+                    color: $green;
+                }
+            }
+            .content {
+                margin-bottom: 70px;
+            }
+        }
+        a.btn.btn-contact {
+            color: $white;
+            background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+            border-radius: 5px;
+            padding: 15px 30px;
+            min-width: 350px;
+            &:hover {
+                // color: $blue;
+                // background-color: transparent;
+                opacity: .8;
+            }
+        }
+    }
+    
     footer.footer {
         padding: 80px 0;
         .footer-logo {
