@@ -1582,11 +1582,37 @@
             background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
             border-radius: 5px;
             padding: 15px 30px;
-            min-width: 350px;
+            min-width: 230px;
             &:hover {
                 // color: $blue;
                 // background-color: transparent;
                 opacity: .8;
+            }
+        }
+    }
+    
+    section.inner-banner.style-6 {
+        padding: 100px 0;
+        .banner-content {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .content-box {
+                text-align: center;
+                max-width: 900px;
+                h2.title {
+                    color: $white;
+                    margin-bottom: 30px;
+                    span {
+                        color: $green;
+                    }
+                }
+                .content {
+                    text-align: center;
+                    color: $white;
+                    margin-bottom: 40px;
+                }
             }
         }
     }

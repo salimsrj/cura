@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <span class="sl">#1</span>
                     <h3 class="title">Personal Touch</h3>
                     <p>We know you need local candidates, and you need them fast! 
-Our one-on-one customer service focus ensures you get precisely what you’re looking for with our expansive network of options.</p>
+                    Our one-on-one customer service focus ensures you get precisely what you’re looking for with our expansive network of options.</p>
                 </article>
             </div>
 
