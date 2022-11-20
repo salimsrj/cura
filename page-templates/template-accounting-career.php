@@ -23,12 +23,109 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <!-- <span class="pre-title">Cura Accounting & Finance</span> -->
                         <h2 class="title">Las Vegas Based?<br> Review <span>open opportunities</span>!</h2>
                         <div class="content">
-                            <p>Your dream job may only be a few clicks away. We want to pair you with the environment that suits you best. Register below to gain access to our database of available positions. Not finding what you’re looking for? Reach out to us with any questions or to find unlisted opportunities.</p>
+                            <p>Your dream job may only be a few clicks away. We want to pair you with the environment
+                                that suits you best. Register below to gain access to our database of available
+                                positions. Not finding what you’re looking for? Reach out to us with any questions or to
+                                find unlisted opportunities.</p>
                         </div>
                         <div class="btns-container">
-                            <ul>                                
+                            <ul>
                                 <li><a href="#" class="btn btn-green">Register</a></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-list-with-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-list-img-box">
+                    <div class="text-list-box">
+                        <h2 class="title">Why choose us?</h2>
+                        <div class="text-list">
+                            <ul>
+                                <li>
+                                    <article>
+                                        <h3 class="title">Professionalism</h3>
+                                        <p>The Cura Accounting & Finance team is full of proven, high-performing
+                                            professionals that stand out amongst the rest.</p>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <h3 class="title">Availability</h3>
+                                        <p>Availability is the best ability. With lightning-fast response time, every
+                                            caller is a priority.</p>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <h3 class="title">Personal Service</h3>
+                                        <p>We take the time to understand you, answer all your questions, and work
+                                            through any concerns.</p>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="img-box">
+                        <div class="image-container">
+                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/Search-engine.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="opportunity-customer-testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="opportunity">
+                    <div class="image-bg"><img src="<?php echo get_stylesheet_directory_uri();?>/images/oportunity.png"
+                            alt="oportunity"></div>
+                    <div class="content-box">
+                        <h2 class="title">Your opportunity starts here.</h2>
+                        <div class="opportunity-list">
+                            <ul>
+                                <li><span>Las Vegas Experts</span></li>
+                                <li><span>Exceptional Service</span></li>
+                                <li><span>24/7 Availability</span></li>
+                                <li><span>One-On-One Support</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 align-items-end">
+                <div class="candidates-testimonials">
+                    <h2 class="title">People who have <span>already chosen Cura</span></h2>
+                    <div class="testimonial">
+                        <div class="item">
+                            <div class="author-img">
+                                <img src="<?php echo get_stylesheet_directory_uri();?>/images/author.png" alt="author">
+                            </div>
+                            <div class="content">
+                                <h3 class="author-info">Libby, Controller</h3>
+                                <div class="text">
+                                    <p>Jennifer is by far the best recruiter I have ever worked with: personable,
+                                        friendly, and very capable. She took the time to truly understand what I was
+                                        looking for in a new role, and in assessing job fit for both me and my potential
+                                        employer. She also managed the recruitment process very effectively. She
+                                        provided sound advice and continuous updates throughout the process. I am truly
+                                        grateful to have worked with her.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
