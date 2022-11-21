@@ -15649,15 +15649,19 @@ figure.woocommerce-product-gallery__wrapper {
 body {
   font-family: "Sansation";
   color: #353535;
+  font-size: 16px;
+  line-height: 22.5px;
 }
 body h2, body .h2 {
   font-size: 55px;
   line-height: 65px;
   font-weight: 700;
 }
-body p {
-  font-size: 16px;
-  line-height: 22.5px;
+@media (max-width: 767px) {
+  body h2, body .h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 body a {
   text-decoration: none;
@@ -17302,6 +17306,310 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+section.inner-banner.style-7 {
+  padding: 250px 0 100px;
+}
+@media (max-width: 767px) {
+  section.inner-banner.style-7 {
+    padding: 100px 0;
+  }
+}
+section.inner-banner.style-7 .banner-content {
+  height: 100vh;
+  min-height: 1126px;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  section.inner-banner.style-7 .banner-content {
+    display: block;
+    min-height: 100vh;
+  }
+}
+section.inner-banner.style-7 .banner-content .left-box {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  section.inner-banner.style-7 .banner-content .left-box {
+    width: 100%;
+  }
+}
+section.inner-banner.style-7 .banner-content .right-box {
+  width: calc(50% - 50px);
+  max-width: 400px;
+}
+@media (max-width: 767px) {
+  section.inner-banner.style-7 .banner-content .right-box {
+    width: 100%;
+  }
+}
+section.inner-banner.style-7 .banner-content .right-box .content {
+  margin-bottom: 30px;
+}
+section.inner-banner.style-7 .banner-content .btn-green {
+  background: linear-gradient(139.51deg, #00AFFF 11.65%, #31E1A2 87.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.about-us {
+  padding: 150px 0;
+}
+section.about-us .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+@media (max-width: 991px) {
+  section.about-us .about-content {
+    gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .about-content {
+    display: block;
+  }
+}
+section.about-us .about-content .left-box {
+  width: calc(50% - 75px);
+}
+@media (max-width: 991px) {
+  section.about-us .about-content .left-box {
+    width: calc(50% - 25px);
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .about-content .left-box {
+    width: 100%;
+  }
+}
+section.about-us .about-content .left-box .left-content-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+section.about-us .about-content .left-box .left-content-box .title-box h2.title, section.about-us .about-content .left-box .left-content-box .title-box .title.h2 {
+  text-align: right;
+  font-weight: 700;
+}
+section.about-us .about-content .left-box .left-content-box .title-box h2.title span, section.about-us .about-content .left-box .left-content-box .title-box .title.h2 span {
+  background: linear-gradient(154.19deg, #00AFFF 41.93%, #31E1A2 101.86%), linear-gradient(0deg, #353535, #353535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  line-height: 90px;
+  display: block;
+}
+section.about-us .about-content .left-box .left-content-box .title-box h2.title::after, section.about-us .about-content .left-box .left-content-box .title-box .title.h2::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: #353535;
+  margin-top: 65px;
+}
+section.about-us .about-content .left-box .left-content-box .text-bottom {
+  font-size: 24px;
+  line-height: 34px;
+  color: #C4C4C4;
+  text-align: right;
+  max-width: 450px;
+}
+section.about-us .about-content .right-box {
+  width: calc(50% - 75px);
+}
+@media (max-width: 991px) {
+  section.about-us .about-content .right-box {
+    width: calc(50% - 25px);
+  }
+}
+@media (max-width: 767px) {
+  section.about-us .about-content .right-box {
+    width: 100%;
+  }
+}
+section.about-us .about-content .right-box .content-box {
+  max-width: 450px;
+}
+section.about-us .about-content .right-box .content-box article {
+  margin-bottom: 35px;
+}
+section.about-us .about-content .right-box .content-box article:last-child {
+  margin-bottom: 0;
+}
+section.about-us .about-content .right-box .content-box article h3, section.about-us .about-content .right-box .content-box article .h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+section.our-team {
+  position: relative;
+  padding: 150px 0;
+  border-top: 1px solid #31E1A2;
+}
+section.our-team .content-box {
+  z-index: 9;
+  position: relative;
+  padding-bottom: 50px;
+}
+section.our-team .content-box h2.title, section.our-team .content-box .title.h2 {
+  margin-bottom: 50px;
+}
+section.our-team .content-box h2.title span, section.our-team .content-box .title.h2 span {
+  background: linear-gradient(117.19deg, #00AFFF 32.35%, #31E1A2 92.9%), linear-gradient(0deg, #353535, #353535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.our-team .content-box h2.title::after, section.our-team .content-box .title.h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #353535;
+  margin-top: 35px;
+}
+section.our-team .content-box .content {
+  max-width: 825px;
+}
+section.our-team .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+section.our-team .team-members .member {
+  width: 25%;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  section.our-team .team-members .member {
+    width: 50%;
+  }
+}
+section.our-team .team-members .member .profile-pic {
+  width: 124px;
+  margin: 30px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+section.our-team .team-members .member h3.name, section.our-team .team-members .member .name.h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+section.our-team .background {
+  width: 50%;
+  position: absolute;
+  height: 950px;
+  right: 0;
+  top: 400px;
+  z-index: 1;
+  border-radius: 0 0 0 100px;
+  overflow: hidden;
+}
+section.our-team .connect-with-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  z-index: 9;
+  position: relative;
+}
+@media (max-width: 767px) {
+  section.our-team .connect-with-team {
+    display: block;
+  }
+}
+section.our-team .connect-with-team .content-box {
+  width: calc(50% - 50px);
+  max-width: 525px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  section.our-team .connect-with-team .content-box {
+    width: 100%;
+  }
+}
+section.our-team .connect-with-team .content-box .content {
+  margin-bottom: 65px;
+}
+section.our-team .connect-with-team .content-box h2.team-title, section.our-team .connect-with-team .content-box .team-title.h2 {
+  margin-bottom: 50px;
+}
+section.our-team .connect-with-team .content-box h2.team-title span, section.our-team .connect-with-team .content-box .team-title.h2 span {
+  background: linear-gradient(117.19deg, #00AFFF 32.35%, #31E1A2 92.9%), linear-gradient(0deg, #353535, #353535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.our-team .connect-with-team .content-box .buttons ul {
+  padding: 0;
+}
+section.our-team .connect-with-team .content-box .buttons ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+section.our-team .connect-with-team .content-box .buttons ul li:last-child {
+  margin-right: 0px;
+}
+section.our-team .connect-with-team .content-box .buttons ul li a.btn.btn-blue-green, section.our-team .connect-with-team .content-box .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue-green.button, .woocommerce-notices-wrapper .woocommerce-message section.our-team .connect-with-team .content-box .buttons ul li a.btn-blue-green.button, section.our-team .connect-with-team .content-box .buttons ul li .woocommerce-info a.btn-blue-green.button, .woocommerce-info section.our-team .connect-with-team .content-box .buttons ul li a.btn-blue-green.button {
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  width: 250px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+section.our-team .connect-with-team .content-box .buttons ul li a.btn.btn-blue-green:hover, section.our-team .connect-with-team .content-box .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue-green.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.our-team .connect-with-team .content-box .buttons ul li a.btn-blue-green.button:hover, section.our-team .connect-with-team .content-box .buttons ul li .woocommerce-info a.btn-blue-green.button:hover, .woocommerce-info section.our-team .connect-with-team .content-box .buttons ul li a.btn-blue-green.button:hover {
+  background: transparent;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  background: linear-gradient(139.51deg, #00AFFF 11.65%, #31E1A2 87.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.our-team .connect-with-team .content-box .buttons ul li .btn-blue {
+  background: linear-gradient(139.51deg, #00AFFF 11.65%, #31E1A2 87.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+section.our-team .connect-with-team .content-box .buttons ul li .btn-blue:hover {
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  width: 250px;
+  color: #FFFFFF;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: #FFFFFF;
+}
+section.our-team .connect-with-team .image-box {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  section.our-team .connect-with-team .image-box {
+    width: 100%;
+  }
+}
+section.our-team .connect-with-team .image-box .image-container {
+  max-width: 400px;
+  border-radius: 45% 45% 45% 0;
+  overflow: hidden;
 }
 
 footer.footer {
