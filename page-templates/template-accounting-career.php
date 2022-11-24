@@ -154,22 +154,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    How do I apply?
+                                    What kind of Industries do you work with?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>Cura works within the Finance & Accounting industry within the city of Las Vegas.</p>
                                 </div>
                             </div>
                         </div>
@@ -177,22 +168,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    I’m looking to relocate, which states do you operate in?
+                                    Do you only place CPAs?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>No! Cura works with all types of Accounting & Finance individuals, whether they are CPA certified or not.</p>
                                 </div>
                             </div>
                         </div>
@@ -200,22 +182,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How do you negotiate for compensation packages?
+                                    Are you only in Las Vegas?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>Correct, Cura’s team solely focuses on finding talent for Vegas businesses or Vegas branches. This emphasis allows us to have the best possible read on the market in the city.</p>
                                 </div>
                             </div>
                         </div>
@@ -224,25 +197,66 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h2 class="accordion-header" id="heading4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    Are there any qualifying tests I need to take?
+                                    How quickly should I expect results?
                                 </button>
                             </h2>
                             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>We have placed candidates on the same day before; it depends on the availability of the candidate and client. An average timeline is usually one week to one and half weeks from presentation to offer.</p>
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Will you help me negotiate the terms of a new job?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Yes! Cura only works in the city of Las Vegas and fully understands market trends as well as client budgets. We make this as easy and painless as possible for you!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    How does Cura help me fit in my new position? 
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>By understanding our clients and how they operate, we get the best possible understanding of who will perform well at the opportunity. Cura will also check in with you for the first month or two to ensure everything is going well!</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    Can you help me find a position with growth opportunities?
+                                </button>
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Cura specializes in bettering one or each of compensation, growth, and flexibility for our candidates.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
 
                     </div>
                 </div>

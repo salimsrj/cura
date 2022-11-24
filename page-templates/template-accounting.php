@@ -32,14 +32,14 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
     </div>
-    <div class="banner-img">
-        <img src="<?php echo get_stylesheet_directory_uri();?>/images/accounting-banner.png" alt="">
+    <div class="banner-img" style="background:url(<?php echo get_stylesheet_directory_uri();?>/images/accounting-banner.png); background-size: cover; background-position: bottom right;">
+        
     </div>
 </section>
 <section class="three-col-text">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 item">
                 <article>
                     <span class="sl">#1</span>
                     <h3 class="title">Identify</h3>
@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </article>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 item">
                 <article>
                     <span class="sl">#2</span>
                     <h3 class="title">Qualify</h3>
@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </article>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 item">
                 <article>
                     <span class="sl">#3</span>
                     <h3 class="title">Consult</h3>

@@ -15673,6 +15673,9 @@ body ul {
   list-style: none;
   padding: 0;
 }
+body .btn:focus, body .wpcf7 input[type=submit]:focus, .wpcf7 body input[type=submit]:focus, body .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message body a.button:focus, body .woocommerce-info a.button:focus, .woocommerce-info body a.button:focus {
+  box-shadow: none;
+}
 body .btn-blue {
   font-size: 18px;
   line-height: 28px;
@@ -15682,7 +15685,7 @@ body .btn-blue {
   min-width: 250px;
 }
 body .btn-blue:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background-color: #00AFFF;
 }
 body .btn-blue-fill {
@@ -15708,7 +15711,7 @@ body .btn-green {
   min-width: 250px;
 }
 body .btn-green:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   background-color: #31E1A2;
 }
 body .btn-green-fill {
@@ -15729,6 +15732,7 @@ body a.btn.btn-contact, body .woocommerce-notices-wrapper .woocommerce-message a
   background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
   border-radius: 5px;
   width: 380px;
+  max-width: 100%;
   padding: 15px;
   font-size: 18px;
   line-height: 28px;
@@ -15760,10 +15764,22 @@ body .accordion-button:not(.collapsed)::after {
 body nav.navbar {
   z-index: 999;
 }
+body nav.navbar ul.navbar-nav li ul.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+body nav.navbar ul.navbar-nav li ul.dropdown-menu li a.dropdown-item {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 26px;
+}
+body nav.navbar ul.navbar-nav li ul.dropdown-menu li a.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 body nav.navbar ul.navbar-nav li a.nav-link {
   font-size: 14px;
   line-height: 24px;
-  padding: 8px 15px;
+  padding: 14px 15px;
 }
 body nav.navbar ul.navbar-nav li a.nav-link:hover {
   color: #FFFFFF;
@@ -15785,7 +15801,7 @@ body nav.navbar ul.navbar-nav li:nth-child(4) a.nav-link {
   border-radius: 5px;
   padding: 8px 30px;
   color: #FFFFFF;
-  margin: 0 15px;
+  margin: 6px 15px;
 }
 
 nav.navbar.navbar-expand-md.navbar-dark.bg-primary {
@@ -15802,11 +15818,21 @@ section.home-banner {
   min-height: 880px;
   padding: 80px 0;
 }
+@media (max-width: 767px) {
+  section.home-banner {
+    min-height: auto;
+  }
+}
 section.home-banner .banner-box {
   max-width: 650px;
   min-height: 800px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 767px) {
+  section.home-banner .banner-box {
+    min-height: auto;
+  }
 }
 section.home-banner .banner-box h2.title, section.home-banner .banner-box .title.h2 {
   font-size: 55px;
@@ -15814,6 +15840,12 @@ section.home-banner .banner-box h2.title, section.home-banner .banner-box .title
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  section.home-banner .banner-box h2.title, section.home-banner .banner-box .title.h2 {
+    font-size: 45px;
+    line-height: 55px;
+  }
 }
 section.home-banner .banner-box h2.title span, section.home-banner .banner-box .title.h2 span {
   color: #C4C4C4;
@@ -15867,10 +15899,20 @@ section.home-banner .banner-col .banner-image {
   border-radius: 100px 0;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  section.home-banner .banner-col .banner-image {
+    display: none;
+  }
+}
 
 section.who-we-are {
   padding: 80px 0;
   min-height: 780px;
+}
+@media (max-width: 767px) {
+  section.who-we-are {
+    min-height: auto;
+  }
 }
 section.who-we-are h2.title, section.who-we-are .title.h2 {
   font-size: 55px;
@@ -15901,6 +15943,10 @@ section.who-we-are .btn.btn-blue, section.who-we-are .wpcf7 input.btn-blue[type=
   text-align: center;
   padding: 14px;
 }
+section.who-we-are .btn.btn-blue:hover, section.who-we-are .wpcf7 input.btn-blue[type=submit]:hover, .wpcf7 section.who-we-are input.btn-blue[type=submit]:hover, section.who-we-are .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.who-we-are a.btn-blue.button:hover, section.who-we-are .woocommerce-info a.btn-blue.button:hover, .woocommerce-info section.who-we-are a.btn-blue.button:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 section.featurs {
   min-height: 1000px;
@@ -15910,13 +15956,28 @@ section.featurs {
   background-repeat: no-repeat;
   background-position: right center;
 }
+@media (max-width: 767px) {
+  section.featurs {
+    background-size: cover;
+  }
+}
 section.featurs .expertise {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 767px) {
+  section.featurs .expertise {
+    display: block;
+  }
+}
 section.featurs .content-box {
   width: 70%;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  section.featurs .content-box {
+    width: 100%;
+  }
 }
 section.featurs .content-box h2.title, section.featurs .content-box .title.h2 {
   font-size: 55px;
@@ -15941,9 +16002,20 @@ section.featurs .two-box-with-icon {
   align-items: center;
   gap: 50px;
 }
+@media (max-width: 767px) {
+  section.featurs .two-box-with-icon {
+    display: block;
+  }
+}
 section.featurs .two-box-with-icon .box {
   width: 422px;
   padding: 50px;
+}
+@media (max-width: 767px) {
+  section.featurs .two-box-with-icon .box {
+    width: 100%;
+    max-width: 422px;
+  }
 }
 section.featurs .two-box-with-icon .box h3.title, section.featurs .two-box-with-icon .box .title.h3 {
   font-size: 24px;
@@ -15959,6 +16031,11 @@ section.featurs .two-box-with-icon .box.boxstyle-1 {
   box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
   border-radius: 100px 0px;
 }
+@media (max-width: 767px) {
+  section.featurs .two-box-with-icon .box.boxstyle-1 {
+    margin: 30px auto;
+  }
+}
 section.featurs .two-box-with-icon .box.boxstyle-1 a.learn-more {
   color: #00AFFF;
 }
@@ -15966,6 +16043,11 @@ section.featurs .two-box-with-icon .box.boxstyle-2 {
   background: #FFFFFF;
   opacity: 0.85;
   border-radius: 0px 100px 0px 100px;
+}
+@media (max-width: 767px) {
+  section.featurs .two-box-with-icon .box.boxstyle-2 {
+    margin: 30px auto;
+  }
 }
 section.featurs .two-box-with-icon .box.boxstyle-2 a.learn-more {
   color: #31E1A2;
@@ -16027,6 +16109,12 @@ section.fill-retention .image-container {
   position: absolute;
   top: -300px;
 }
+@media (max-width: 767px) {
+  section.fill-retention .image-container {
+    position: relative;
+    top: 0;
+  }
+}
 section.fill-retention .fill-retention-box {
   display: flex;
   flex-wrap: wrap;
@@ -16049,6 +16137,12 @@ section.fill-retention .fill-retention-box .percentage {
   line-height: 90px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  section.fill-retention .fill-retention-box .percentage {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 section.fill-retention .content-box .content {
   max-width: 460px;
@@ -16108,6 +16202,7 @@ section.text-with-btn .buttons ul li a.btn, section.text-with-btn .buttons ul li
   min-width: 280px;
   padding: 15px;
   font-size: 18px;
+  margin-bottom: 15px;
 }
 section.text-with-btn .buttons ul li a.btn.btn-blue, section.text-with-btn .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.text-with-btn .buttons ul li a.btn-blue.button, section.text-with-btn .buttons ul li .woocommerce-info a.btn-blue.button, .woocommerce-info section.text-with-btn .buttons ul li a.btn-blue.button {
   border: 1px solid #00AFFF;
@@ -16121,8 +16216,18 @@ section.text-with-btn .two-box {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  section.text-with-btn .two-box {
+    display: block;
+  }
+}
 section.text-with-btn .two-box .left-box {
   width: 300px;
+}
+@media (max-width: 767px) {
+  section.text-with-btn .two-box .left-box {
+    width: 100%;
+  }
 }
 section.text-with-btn .two-box .left-box h3.title, section.text-with-btn .two-box .left-box .title.h3 {
   font-size: 24px;
@@ -16130,6 +16235,11 @@ section.text-with-btn .two-box .left-box h3.title, section.text-with-btn .two-bo
 }
 section.text-with-btn .two-box .right-box {
   width: calc(100% - 300px);
+}
+@media (max-width: 767px) {
+  section.text-with-btn .two-box .right-box {
+    width: 100%;
+  }
 }
 section.text-with-btn .two-box .right-box h2.title, section.text-with-btn .two-box .right-box .title.h2 {
   font-size: 55px;
@@ -16170,6 +16280,7 @@ section.contact h2.title, section.contact .title.h2 {
   line-height: 65px;
   color: #FFFFFF;
   margin-bottom: 30px;
+  position: relative;
 }
 section.contact h3.sub-title, section.contact .sub-title.h3 {
   font-weight: 700;
@@ -16182,6 +16293,7 @@ section.contact a.btn.btn-contact, section.contact .woocommerce-notices-wrapper 
   background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
   border-radius: 5px;
   width: 380px;
+  max-width: 100%;
   padding: 15px;
   font-size: 18px;
   line-height: 28px;
@@ -16892,11 +17004,14 @@ section.inner-banner.style-4 .banner-content .content-box .btns-container ul li:
   margin-right: 0;
 }
 section.inner-banner.style-4 .banner-img {
-  width: 40%;
-  max-width: 572px;
+  width: calc((100% - 1320px) / 2 + 440px + 50px);
+  max-width: 50%;
   position: absolute;
   top: 0;
   right: 0;
+  min-height: 1270px;
+  overflow: hidden;
+  border-radius: 0 0 0 100px;
 }
 
 section.three-col-text {
@@ -16906,6 +17021,7 @@ section.three-col-text {
 section.three-col-text article {
   max-width: 300px;
   z-index: 1;
+  position: relative;
 }
 section.three-col-text article span.sl {
   font-size: 16px;
@@ -16928,6 +17044,25 @@ section.three-col-text article h3.title::after, section.three-col-text article .
   background-color: #00AFFF;
   display: block;
   margin-top: 20px;
+}
+@media (min-width: 768px) {
+  section.three-col-text .item:last-child article {
+    color: #FFFFFF;
+  }
+  section.three-col-text .item:last-child article span.sl {
+    color: #FFFFFF;
+  }
+  section.three-col-text .item:last-child article h3.title, section.three-col-text .item:last-child article .title.h3 {
+    color: #FFFFFF;
+  }
+  section.three-col-text .item:last-child article h3.title::after, section.three-col-text .item:last-child article .title.h3::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #FFFFFF;
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 section.two-col-text-img {
@@ -17852,6 +17987,198 @@ section.contact.contact-style-2 .content-box h2.title, section.contact.contact-s
   font-weight: 700;
 }
 
+section.contact-form {
+  padding: 250px 0 100px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+}
+section.contact-form .content-box h2.title, section.contact-form .content-box .title.h2 {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+section.contact-form .content-box h2.title span, section.contact-form .content-box .title.h2 span {
+  background: linear-gradient(147.71deg, #00AFFF 3.47%, #31E1A2 53.89%), linear-gradient(0deg, #353535, #353535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.contact-form .content-box .content {
+  max-width: 885px;
+  margin-bottom: 50px;
+}
+section.contact-form .form-container .gform_wrapper.gravity-theme .gfield input.large,
+section.contact-form .form-container .gform_wrapper.gravity-theme .gfield select.large {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #353535;
+  min-height: 60px;
+  padding: 15px;
+  padding-left: 50px;
+  margin-bottom: 22px;
+}
+section.contact-form .form-container .gform_wrapper.gravity-theme .gfield textarea.medium {
+  border-radius: 5px;
+  border: 1px solid #353535;
+  margin-bottom: 22px;
+  padding: 20px 50px;
+}
+section.contact-form .form-container input[type=submit].gform_button.button {
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  width: 250px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  min-height: 60px;
+}
+section.contact-form .form-container input[type=submit].gform_button.button:hover {
+  background: transparent;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.two-col-textimg.style-2 .content-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  section.two-col-textimg.style-2 .content-box {
+    display: block;
+  }
+}
+section.two-col-textimg.style-2 .content-box h2.title span, section.two-col-textimg.style-2 .content-box .title.h2 span {
+  color: #C4C4C4;
+}
+section.two-col-textimg.style-2 .content-box .content {
+  max-width: 400px;
+}
+section.two-col-textimg.style-2 .content-box .left-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+section.two-col-textimg.style-2 .content-box .left-col {
+  width: 45%;
+}
+@media (max-width: 767px) {
+  section.two-col-textimg.style-2 .content-box .left-col {
+    width: 100%;
+  }
+}
+section.two-col-textimg.style-2 .content-box .right-col {
+  width: 55%;
+}
+@media (max-width: 767px) {
+  section.two-col-textimg.style-2 .content-box .right-col {
+    width: 100%;
+  }
+}
+
+section.opportunity-customer-testimonials.style-2 .opportunity .opportunity-list ul li:last-child {
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  section.opportunity-customer-testimonials.style-2 .opportunity .opportunity-list ul li:last-child {
+    color: #353535;
+  }
+}
+section.opportunity-customer-testimonials.style-2 .opportunity .opportunity-list ul li:nth-child(3) {
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  section.opportunity-customer-testimonials.style-2 .opportunity .opportunity-list ul li:nth-child(3) {
+    color: #353535;
+  }
+}
+section.opportunity-customer-testimonials.style-2 .opportunity .opportunity-list ul li::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%) !important;
+  display: inline-block;
+  border-radius: 50%;
+  top: -15px;
+}
+section.opportunity-customer-testimonials.style-2 .opportunity .image-bg {
+  max-width: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: inherit;
+  max-height: 550px;
+  overflow: hidden;
+  border-radius: 0 100px 0 0;
+}
+section.opportunity-customer-testimonials.style-2 .opportunity .content-box {
+  position: absolute;
+  bottom: -130px;
+}
+@media (max-width: 767px) {
+  section.opportunity-customer-testimonials.style-2 .opportunity .content-box {
+    position: relative;
+    bottom: 0;
+  }
+}
+section.opportunity-customer-testimonials.style-2 .candidates-testimonials .testimonial {
+  margin-bottom: 65px;
+}
+section.opportunity-customer-testimonials.style-2 .candidates-testimonials h2.title, section.opportunity-customer-testimonials.style-2 .candidates-testimonials .title.h2 {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+section.buttons-with-bg .btn-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.buttons-with-bg .btn-container ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+section.buttons-with-bg .btn-container ul li:last-child {
+  margin-right: 0;
+}
+section.buttons-with-bg a.btn.btn-transparent, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-transparent.button, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-transparent.button, section.buttons-with-bg .woocommerce-info a.btn-transparent.button, .woocommerce-info section.buttons-with-bg a.btn-transparent.button {
+  background: transparent;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  background: linear-gradient(174.77deg, #00AFFF 4.19%, #31E1A2 111.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 280px;
+  padding: 15px;
+}
+section.buttons-with-bg a.btn.btn-transparent:hover, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-transparent.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-transparent.button:hover, section.buttons-with-bg .woocommerce-info a.btn-transparent.button:hover, .woocommerce-info section.buttons-with-bg a.btn-transparent.button:hover {
+  background: linear-gradient(174.77deg, #00AFFF 4.19%, #31E1A2 111.99%);
+  border-radius: 5px;
+  width: 250px;
+  color: #FFFFFF;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: #FFFFFF;
+}
+section.buttons-with-bg a.btn.btn-link, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-link.button, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-link.button, section.buttons-with-bg .woocommerce-info a.btn-link.button, .woocommerce-info section.buttons-with-bg a.btn-link.button {
+  padding: 15px;
+  border: none;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(174.77deg, #00AFFF 4.19%, #31E1A2 111.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.buttons-with-bg a.btn.btn-link:hover, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-link.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-link.button:hover, section.buttons-with-bg .woocommerce-info a.btn-link.button:hover, .woocommerce-info section.buttons-with-bg a.btn-link.button:hover {
+  text-decoration: underline;
+}
+
 footer.footer {
   padding: 80px 0;
 }
@@ -17863,6 +18190,11 @@ footer.footer .designed-by {
   font-size: 10px;
   line-height: 15px;
 }
+@media (max-width: 767px) {
+  footer.footer .contact {
+    padding-top: 20px;
+  }
+}
 footer.footer .contact ul {
   list-style: none;
   padding: 0;
@@ -17871,6 +18203,11 @@ footer.footer .contact ul {
 footer.footer .contact ul li {
   padding-bottom: 10px;
   display: inline-block;
+}
+@media (max-width: 767px) {
+  footer.footer .contact ul li {
+    display: block;
+  }
 }
 footer.footer .contact ul li a {
   text-decoration: none;
@@ -17899,6 +18236,11 @@ footer.footer .footer-menu ul li > ul {
   display: inline;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 767px) {
+  footer.footer .footer-menu ul li > ul {
+    display: block;
+  }
 }
 footer.footer .footer-menu ul li > ul li {
   display: inline-block;
