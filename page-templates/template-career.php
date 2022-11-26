@@ -116,7 +116,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="row">
             <div class="col-12">
                 <div class="content-box">
-                    <h2 class="title">Let Cura help you achieve your goal.</h2>
+                    <h2 class="title">Let <span>Cura</span> help you achieve your goal.</h2>
                     <div class="btn-container">
                         <ul>
                             <li><a href="#" class="btn btn-blue-green">CONTACT US</a></li>
@@ -137,16 +137,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>You can apply directly on this website on the jobs page!</p>
                                 </div>
                             </div>
                         </div>
@@ -160,16 +151,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>Cura Search is a national business and operates in all 50 states within the USA</p>
                                 </div>
                             </div>
                         </div>
@@ -183,16 +165,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>Our reps can best guide you based on your plans or goals and certainly get you into the right fit, including understanding budgets and market standards. We focus on balancing base salary, commission, growth, and flexibility that correctly works within the needs and wants of the candidate.</p>
                                 </div>
                             </div>
                         </div>
@@ -201,22 +174,29 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h2 class="accordion-header" id="heading4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    Are there any qualifying tests I need to take?
+                                    Are these positions temporary or full-time?
                                 </button>
                             </h2>
                             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida.
-                                    Aliquam nulla facilisi cras fermentum. Dictumst quisque sagittis purus sit amet.
-                                    Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Consectetur
-                                    adipiscing elit duis tristique sollicitudin. Pellentesque pulvinar pellentesque
-                                    habitant morbi tristique senectus et netus. Commodo sed egestas egestas fringilla
-                                    phasellus faucibus scelerisque. Urna molestie at elementum eu facilisis sed odio
-                                    morbi. Pellentesque habitant morbi tristique senectus. Elit at imperdiet dui
-                                    accumsan sit amet nulla. Enim ut sem viverra aliquet eget sit amet. Tellus integer
-                                    feugiat scelerisque varius.
+                                    <p>At this time, Cura Search only focuses on permanent positions. All are W-2 opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Which companies does Cura recruit for?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Cura Search specializes in finding and placing talent within the Healthcare, Tech, and Life Science staffing industries. We recruit Recruiters, Business Development reps, Accounting Managers, Account executives, Managers, and much more5</p>
                                 </div>
                             </div>
                         </div>

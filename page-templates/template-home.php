@@ -122,7 +122,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </section>
 
 
-<section class="fill-retention" style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/building-bg.png); background-size: cover; background-position: center center;">
+<section class="fill-retention" style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/building-bg.png); background-size:  calc(100% - 150px) 100%; background-position: left; background-repeat: no-repeat;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
