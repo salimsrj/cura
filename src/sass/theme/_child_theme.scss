@@ -143,6 +143,9 @@
             font-size: 18px;
             line-height: 28px;
             color: $white;
+            @include mobile {
+                max-width: 100%;
+            }
             &:hover {
                 background: transparent;
                 color: $blue;
@@ -737,6 +740,9 @@
             font-size: 18px;
             line-height: 28px;
             color: $white;
+            @include mobile {
+                width: 100%;
+            }
             &:hover {
                 background: transparent;
                 color: $blue;
@@ -1888,6 +1894,11 @@
                         li {
                             display: inline-block;
                             margin-right: 30px;
+                            @include mobile {
+                                display: block;
+                                margin-right: 0;
+                                margin-bottom: 15px;
+                            }
                             &:last-child {
                                 margin-right: 0;
                             }
@@ -1905,9 +1916,15 @@
             flex-wrap: wrap;
             gap: 35px;
             justify-content: space-between;
+            @include mobile {
+                display: block;
+            }
             .content-box {
                 width: calc(65% - 30px);
                 max-width: 700px;
+                @include mobile {
+                    width: 100%;
+                }
                 h2.title {
                     margin-bottom: 65px;
                     span {
@@ -1917,6 +1934,9 @@
             }
             .image-box {
                 width: 30%;
+                @include mobile {
+                    width: 100%;
+                }
                 .image-container {
                     max-width: 410px;
                 }
@@ -1957,9 +1977,16 @@
     
     section.two-col-text {
         padding: 100px 0;
+        @include mobile {
+            padding: 50px 0;
+        }
         .box {
             width: 422px;
+            max-width: 100%;
             padding: 50px;
+            @include mobile {
+                padding: 25px;
+            }
             h3.title {
                 font-size: 24px;
                 line-height: 34px;
@@ -1974,6 +2001,9 @@
                 background: linear-gradient(89.2deg, #FFFFFF 50.88%, rgba(255, 255, 255, 0.7) 101.08%);
                 box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
                 border-radius: 100px 0px;
+                @include mobile {
+                    border-radius: 50px 0;
+                }
                 a.learn-more {
                     color: $green;
                 }
@@ -1982,6 +2012,9 @@
                 background: #FFFFFF;
                 opacity: 0.85;
                 border-radius: 0px 100px 0px 100px;
+                @include mobile {
+                    border-radius: 0 50px 0 50px;
+                }
                 a.learn-more {
                     color: $green;
                 }
@@ -2005,6 +2038,10 @@
             border-radius: 5px;
             padding: 15px 30px;
             min-width: 230px;
+            @include mobile {
+                max-width: 100%;
+                min-width: inherit;
+            }
             &:hover {
                 // color: $blue;
                 // background-color: transparent;
@@ -2108,6 +2145,10 @@
                 left: 0;
                 max-height: 550px;
                 overflow: hidden;
+                @include mobile {
+                    max-width: 50%;
+                    top: -40px;
+                }
             }
             .content-box {
                 position: relative;
@@ -2250,6 +2291,9 @@
     
     section.about-us {
         padding: 150px 0;
+        @include mobile {
+            padding: 50px 0;
+        }
         .about-content {
             display: flex;
             flex-wrap: wrap;
@@ -2283,6 +2327,10 @@
                                 font-size: 75px;
                                 line-height: 90px;
                                 display: block;
+                                @include mobile {
+                                    font-size: 50px;
+                                    line-height: 65px;
+                                }
                             }
                             &::after {
                                 content: '';
@@ -2300,6 +2348,10 @@
                         color: $light-gray;
                         text-align: right;
                         max-width: 450px;
+                        @include mobile {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
                     }
                 }
             }
@@ -2334,6 +2386,9 @@
         position: relative;
         padding: 150px 0;
         border-top: 1px solid $green;
+        @include mobile {
+            padding: 50px 0;
+        }
         .content-box {
             z-index: 9;
             position: relative;
@@ -2362,6 +2417,9 @@
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 150px;
+            @include mobile {
+                margin-bottom: 50px;
+            }
             .member {
                 width: 25%;
                 @include mobile {
@@ -2660,11 +2718,21 @@
                 list-style: none;
                 padding: 0;
                 display: flex;
+                @include mobile {
+                    display: block;
+                }
                 li {
                     display: inline-block;
                     width: 33.3%;
                     border-right: 1px solid $blue;
                     padding: 0 30px;
+                    @include mobile {
+                        padding: 0;
+                        width: 100%;
+                        text-align: center;
+                        border: none;
+                        margin-bottom: 15px;
+                    }
                     &:last-child {
                         border-right: 0;
                         padding-right: 0;
@@ -2678,6 +2746,11 @@
                         font-weight: 700;
                         margin-bottom: 20px;
                         display: inline-block;
+                        @include mobile {
+                            font-size: 45px;
+                            line-height: 55px;
+                            margin-bottom: 5px;
+                        }
                     }
                     .step-text {
                         font-size: 28px;

@@ -15741,6 +15741,11 @@ body a.btn.btn-contact, body .woocommerce-notices-wrapper .woocommerce-message a
   line-height: 28px;
   color: #FFFFFF;
 }
+@media (max-width: 767px) {
+  body a.btn.btn-contact, body .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message body a.btn-contact.button, body .woocommerce-info a.btn-contact.button, .woocommerce-info body a.btn-contact.button {
+    max-width: 100%;
+  }
+}
 body a.btn.btn-contact:hover, body .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button:hover, .woocommerce-notices-wrapper .woocommerce-message body a.btn-contact.button:hover, body .woocommerce-info a.btn-contact.button:hover, .woocommerce-info body a.btn-contact.button:hover {
   background: transparent;
   color: #00AFFF;
@@ -16363,6 +16368,11 @@ section.contact a.btn.btn-contact, section.contact .woocommerce-notices-wrapper 
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  section.contact a.btn.btn-contact, section.contact .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.contact a.btn-contact.button, section.contact .woocommerce-info a.btn-contact.button, .woocommerce-info section.contact a.btn-contact.button {
+    width: 100%;
+  }
 }
 section.contact a.btn.btn-contact:hover, section.contact .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.contact a.btn-contact.button:hover, section.contact .woocommerce-info a.btn-contact.button:hover, .woocommerce-info section.contact a.btn-contact.button:hover {
   background: transparent;
@@ -17586,6 +17596,13 @@ section.inner-banner.style-5 .banner-content .content-box .btns-container ul li 
   display: inline-block;
   margin-right: 30px;
 }
+@media (max-width: 767px) {
+  section.inner-banner.style-5 .banner-content .content-box .btns-container ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 section.inner-banner.style-5 .banner-content .content-box .btns-container ul li:last-child {
   margin-right: 0;
 }
@@ -17599,9 +17616,19 @@ section.text-with-img .content-img-box {
   gap: 35px;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  section.text-with-img .content-img-box {
+    display: block;
+  }
+}
 section.text-with-img .content-img-box .content-box {
   width: calc(65% - 30px);
   max-width: 700px;
+}
+@media (max-width: 767px) {
+  section.text-with-img .content-img-box .content-box {
+    width: 100%;
+  }
 }
 section.text-with-img .content-img-box .content-box h2.title, section.text-with-img .content-img-box .content-box .title.h2 {
   margin-bottom: 65px;
@@ -17611,6 +17638,11 @@ section.text-with-img .content-img-box .content-box h2.title span, section.text-
 }
 section.text-with-img .content-img-box .image-box {
   width: 30%;
+}
+@media (max-width: 767px) {
+  section.text-with-img .content-img-box .image-box {
+    width: 100%;
+  }
 }
 section.text-with-img .content-img-box .image-box .image-container {
   max-width: 410px;
@@ -17650,9 +17682,20 @@ section.three-col-text-with-bg article h3.title::after, section.three-col-text-w
 section.two-col-text {
   padding: 100px 0;
 }
+@media (max-width: 767px) {
+  section.two-col-text {
+    padding: 50px 0;
+  }
+}
 section.two-col-text .box {
   width: 422px;
+  max-width: 100%;
   padding: 50px;
+}
+@media (max-width: 767px) {
+  section.two-col-text .box {
+    padding: 25px;
+  }
 }
 section.two-col-text .box h3.title, section.two-col-text .box .title.h3 {
   font-size: 24px;
@@ -17669,6 +17712,11 @@ section.two-col-text .box.boxstyle-1 {
   box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
   border-radius: 100px 0px;
 }
+@media (max-width: 767px) {
+  section.two-col-text .box.boxstyle-1 {
+    border-radius: 50px 0;
+  }
+}
 section.two-col-text .box.boxstyle-1 a.learn-more {
   color: #31E1A2;
 }
@@ -17676,6 +17724,11 @@ section.two-col-text .box.boxstyle-2 {
   background: #FFFFFF;
   opacity: 0.85;
   border-radius: 0px 100px 0px 100px;
+}
+@media (max-width: 767px) {
+  section.two-col-text .box.boxstyle-2 {
+    border-radius: 0 50px 0 50px;
+  }
 }
 section.two-col-text .box.boxstyle-2 a.learn-more {
   color: #31E1A2;
@@ -17698,6 +17751,12 @@ section.two-col-text a.btn.btn-contact, section.two-col-text .woocommerce-notice
   border-radius: 5px;
   padding: 15px 30px;
   min-width: 230px;
+}
+@media (max-width: 767px) {
+  section.two-col-text a.btn.btn-contact, section.two-col-text .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.two-col-text a.btn-contact.button, section.two-col-text .woocommerce-info a.btn-contact.button, .woocommerce-info section.two-col-text a.btn-contact.button {
+    max-width: 100%;
+    min-width: inherit;
+  }
 }
 section.two-col-text a.btn.btn-contact:hover, section.two-col-text .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.two-col-text a.btn-contact.button:hover, section.two-col-text .woocommerce-info a.btn-contact.button:hover, .woocommerce-info section.two-col-text a.btn-contact.button:hover {
   opacity: 0.8;
@@ -17802,6 +17861,12 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
   left: 0;
   max-height: 550px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .opportunity-customer-testimonials .opportunity .image-bg {
+    max-width: 50%;
+    top: -40px;
+  }
 }
 .opportunity-customer-testimonials .opportunity .content-box {
   position: relative;
@@ -17941,6 +18006,11 @@ section.inner-banner.style-7 .banner-content .btn-green {
 section.about-us {
   padding: 150px 0;
 }
+@media (max-width: 767px) {
+  section.about-us {
+    padding: 50px 0;
+  }
+}
 section.about-us .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -17986,6 +18056,12 @@ section.about-us .about-content .left-box .left-content-box .title-box h2.title 
   line-height: 90px;
   display: block;
 }
+@media (max-width: 767px) {
+  section.about-us .about-content .left-box .left-content-box .title-box h2.title span, section.about-us .about-content .left-box .left-content-box .title-box .title.h2 span {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
 section.about-us .about-content .left-box .left-content-box .title-box h2.title::after, section.about-us .about-content .left-box .left-content-box .title-box .title.h2::after {
   content: "";
   display: inline-block;
@@ -18000,6 +18076,12 @@ section.about-us .about-content .left-box .left-content-box .text-bottom {
   color: #C4C4C4;
   text-align: right;
   max-width: 450px;
+}
+@media (max-width: 767px) {
+  section.about-us .about-content .left-box .left-content-box .text-bottom {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 section.about-us .about-content .right-box {
   width: calc(50% - 75px);
@@ -18035,6 +18117,11 @@ section.our-team {
   padding: 150px 0;
   border-top: 1px solid #31E1A2;
 }
+@media (max-width: 767px) {
+  section.our-team {
+    padding: 50px 0;
+  }
+}
 section.our-team .content-box {
   z-index: 9;
   position: relative;
@@ -18063,6 +18150,11 @@ section.our-team .team-members {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 150px;
+}
+@media (max-width: 767px) {
+  section.our-team .team-members {
+    margin-bottom: 50px;
+  }
 }
 section.our-team .team-members .member {
   width: 25%;
@@ -18367,11 +18459,25 @@ section.contact.contact-style-2 .content-box h2.title, section.contact.contact-s
   padding: 0;
   display: flex;
 }
+@media (max-width: 767px) {
+  .setp-section .steps ul {
+    display: block;
+  }
+}
 .setp-section .steps ul li {
   display: inline-block;
   width: 33.3%;
   border-right: 1px solid #00AFFF;
   padding: 0 30px;
+}
+@media (max-width: 767px) {
+  .setp-section .steps ul li {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin-bottom: 15px;
+  }
 }
 .setp-section .steps ul li:last-child {
   border-right: 0;
@@ -18386,6 +18492,13 @@ section.contact.contact-style-2 .content-box h2.title, section.contact.contact-s
   font-weight: 700;
   margin-bottom: 20px;
   display: inline-block;
+}
+@media (max-width: 767px) {
+  .setp-section .steps ul li span.qty {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 5px;
+  }
 }
 .setp-section .steps ul li .step-text {
   font-size: 28px;
