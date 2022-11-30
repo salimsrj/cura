@@ -15814,6 +15814,13 @@ body nav.navbar ul.navbar-nav li:nth-child(4) a.nav-link {
   color: #FFFFFF;
   margin: 6px 15px;
 }
+@media (max-width: 767px) {
+  body nav.navbar ul.navbar-nav li:nth-child(4) a.nav-link {
+    margin: 0;
+    padding: 14px 15px;
+    background-color: transparent;
+  }
+}
 
 nav.navbar.navbar-expand-md.navbar-dark.bg-primary {
   background-color: rgba(53, 53, 53, 0.6) !important;
@@ -15853,6 +15860,7 @@ section.home-banner .banner-box h2.title, section.home-banner .banner-box .title
   margin-bottom: 0;
   border-bottom: 1px solid #c4c4c4;
   padding-bottom: 50px;
+  max-width: 580px;
 }
 @media (max-width: 767px) {
   section.home-banner .banner-box h2.title, section.home-banner .banner-box .title.h2 {
@@ -15908,7 +15916,7 @@ section.home-banner .banner-col .banner-image {
   max-width: 330px;
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 24%;
   border-radius: 100px 0;
   overflow: hidden;
 }
@@ -15919,12 +15927,13 @@ section.home-banner .banner-col .banner-image {
 }
 
 section.who-we-are {
-  padding: 80px 0;
+  padding: 165px 0 80px;
   min-height: 780px;
 }
 @media (max-width: 767px) {
   section.who-we-are {
     min-height: auto;
+    padding: 50px 0;
   }
 }
 section.who-we-are h2.title, section.who-we-are .title.h2 {
@@ -15971,7 +15980,7 @@ section.featurs {
   min-height: 1000px;
   padding: 100px 0;
   background: url("../images/OurExpertiseBg.png");
-  background-size: 70%;
+  background-size: 78%;
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -16339,6 +16348,9 @@ section.contact h2.title, section.contact .title.h2 {
   color: #FFFFFF;
   margin-bottom: 30px;
   position: relative;
+}
+section.contact h2.title span, section.contact .title.h2 span {
+  color: #C4C4C4;
 }
 @media (max-width: 767px) {
   section.contact h2.title, section.contact .title.h2 {
@@ -16826,6 +16838,16 @@ section.steps .tow-box .left-box {
 section.steps .tow-box .left-box .image-container {
   border-radius: 0 100px 0 0;
   overflow: hidden;
+  position: relative;
+}
+section.steps .tow-box .left-box .image-container a.hastag {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
 }
 section.steps .tow-box .right-box {
   width: calc(60% - 100px);
@@ -17148,6 +17170,19 @@ section.why-choose-us .our-featurs {
 section.why-choose-us .our-featurs .featur-list {
   max-width: 430px;
   margin-bottom: 70px;
+  margin-left: 15%;
+  z-index: 9;
+  position: relative;
+}
+@media (max-width: 991px) {
+  section.why-choose-us .our-featurs .featur-list {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  section.why-choose-us .our-featurs .featur-list {
+    margin: 0 auto;
+  }
 }
 section.why-choose-us .our-featurs .featur-list ul {
   list-style: none;
@@ -18696,6 +18731,168 @@ section.buttons-with-bg a.btn.btn-link, section.buttons-with-bg .woocommerce-not
 }
 section.buttons-with-bg a.btn.btn-link:hover, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-link.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-link.button:hover, section.buttons-with-bg .woocommerce-info a.btn-link.button:hover, .woocommerce-info section.buttons-with-bg a.btn-link.button:hover {
   text-decoration: underline;
+}
+
+section.job-details {
+  padding: 150px 0 100px;
+}
+section.job-details .job-content-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+@media (max-width: 991px) {
+  section.job-details .job-content-box {
+    display: block;
+  }
+}
+section.job-details .job-content-box .job-content {
+  width: calc(70% - 50px);
+}
+@media (max-width: 991px) {
+  section.job-details .job-content-box .job-content {
+    width: 100%;
+  }
+}
+section.job-details .job-content-box .job-content span.sub-title {
+  font-weight: 700;
+  color: #00AFFF;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+section.job-details .job-content-box .job-content span.sub-title.green-title {
+  color: #31E1A2;
+}
+section.job-details .job-content-box .job-content h2.title, section.job-details .job-content-box .job-content .title.h2 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+section.job-details .job-content-box .job-content h3, section.job-details .job-content-box .job-content .h3 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+section.job-details .job-content-box .job-content h4, section.job-details .job-content-box .job-content .h4 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+}
+section.job-details .job-content-box .job-content .details {
+  margin-bottom: 75px;
+}
+section.job-details .job-content-box .job-content .details ul li {
+  margin-bottom: 15px;
+}
+section.job-details .job-content-box .job-content .details ul li span.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 15px;
+}
+section.job-details .job-content-box .job-content .content {
+  font-size: 18px;
+  line-height: 28px;
+}
+section.job-details .job-content-box .job-content .content ul {
+  list-style: disc;
+  padding-left: 15px;
+}
+section.job-details .job-content-box .job-content .content ul li {
+  padding-bottom: 10px;
+}
+section.job-details .job-content-box .sidebar {
+  width: 30%;
+}
+@media (max-width: 991px) {
+  section.job-details .job-content-box .sidebar {
+    width: 100%;
+  }
+}
+section.job-details .job-content-box .sidebar .apply-box {
+  border: 1px solid #EAECF0;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  border-radius: 16px;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+section.job-details .job-content-box .sidebar .apply-box h4, section.job-details .job-content-box .sidebar .apply-box .h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+section.job-details .job-content-box .sidebar .apply-box .btn-container {
+  margin-bottom: 35px;
+  padding-top: 25px;
+}
+section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn.btn-apply, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-apply.button, .woocommerce-notices-wrapper .woocommerce-message section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-apply.button, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-info a.btn-apply.button, .woocommerce-info section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-apply.button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn.btn-apply:hover, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-apply.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-apply.button:hover, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-info a.btn-apply.button:hover, .woocommerce-info section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-apply.button:hover {
+  background: transparent;
+  color: #00AFFF;
+  border: 1px solid #00AFFF;
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn.btn-save, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-save.button, .woocommerce-notices-wrapper .woocommerce-message section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-save.button, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-info a.btn-save.button, .woocommerce-info section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-save.button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D0D5DD;
+  font-weight: 700;
+}
+section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn.btn-save span.icon, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-save.button span.icon, .woocommerce-notices-wrapper .woocommerce-message section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-save.button span.icon, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-info a.btn-save.button span.icon, .woocommerce-info section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-save.button span.icon {
+  font-size: 18px;
+  line-height: 15px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn.btn-save:hover, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-notices-wrapper .woocommerce-message a.btn-save.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-save.button:hover, section.job-details .job-content-box .sidebar .apply-box .btn-container .woocommerce-info a.btn-save.button:hover, .woocommerce-info section.job-details .job-content-box .sidebar .apply-box .btn-container a.btn-save.button:hover {
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  color: #FFFFFF;
+  border: 1px solid #00AFFF;
+}
+section.job-details .job-content-box .sidebar .apply-box .border-bottom {
+  margin: 0 -30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #D0D5DD !important;
+}
+section.job-details .job-content-box .sidebar .apply-box a.link {
+  color: #353535;
+  text-decoration: underline;
+  display: inline-block;
+}
+section.job-details .job-content-box .sidebar .apply-box .social-share-icons {
+  padding-top: 20px;
+}
+section.job-details .job-content-box .sidebar .apply-box .social-share-icons ul {
+  padding: 0;
+  margin: 0;
+}
+section.job-details .job-content-box .sidebar .apply-box .social-share-icons ul li {
+  display: inline-block;
+}
+section.job-details .job-content-box .sidebar .apply-box .social-share-icons ul li a {
+  color: #98A2B3;
+  font-size: 30px;
+  line-height: 30px;
+  padding-right: 20px;
+}
+section.job-details .job-content-box .sidebar .apply-box .social-share-icons ul li a:hover {
+  color: #00AFFF;
 }
 
 footer.footer {

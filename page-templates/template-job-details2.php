@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Career
+ * Template Name: Job Details 2
  *
  * This template can be used to override the default template and sidebar setup
  *
@@ -12,104 +12,96 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-<section class="inner-banner style-2"
-    style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/career-banner-bg.jpg); background-size: cover; background-position: bottom center;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="banner-content">
-                    <div class="content-box">
-                        <span class="pre-title">Discover Your</span>
-                        <h2 class="title">DREAM JOB</h2>
-                        <div class="content">
-                            <p>There are many facets to the Staffing Industry. Regardless of your experience level and
-                                focus Cura Recruiting will help you find the sweet spot to call home.</p>
-                        </div>
-                        <div class="button-container">
-                            <a href="#" class="btn btn-blue-fill">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="steps">
+<section class="job-details job-details2">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-content">
-                    <h2 class="title">A Step Above</h2>
-                    <div class="content">
-                        <p>You won’t get lost in the sea of candidates when you work with our team. Our method ensures
-                            timely responses, active participation with a real expert in your field, and complimentary
-                            education and guidance on tough topics like negotiating compensation packages. We serve as
-                            the connection point between specialized staffing organizations and ideal candidates!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="tow-box">
-                    <div class="left-box">
-                        <div class="image-container">
-                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/buiding-bg2.jpg" alt="">
-                            <a href="#" class="hastag">#GoodToKnow</a>
-                        </div>
-                    </div>
-                    <div class="right-box">
-                        <div class="steps">
+                <div class="job-content-box">
+                    <div class="job-content">
+                        <span class="sub-title green-title">Sharepoint, Inc.</span>
+                        <h2 class="title">Security tech writer</h2>
+                        <div class="details">
+                            <p><strong>Details</strong></p>
                             <ul>
-                                <li>
-                                    <span class="qty">100%</span>
-                                    <div class="step-text"><span>Customer satisfaction</span></div>
-                                </li>
-                                <li>
-                                    <span class="qty">100S</span>
-                                    <div class="step-text"><span>Positions to choose from</span></div>
-                                </li>
-                                <li>
-                                    <span class="qty">50</span>
-                                    <div class="step-text"><span>States we service</span></div>
-                                </li>
+                                <li><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Icon-bag-green.png" alt="icon"></span>Physical</li>
+                                <li><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Icon-payment-green.png" alt="icon"></span>Permanent Position</li>
+                                <li><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/Icon-calendar-green.png" alt="icon"></span>Posted on July 12, 2022</li>
                             </ul>
                         </div>
-                        <div class="candidates-testimonials">
-                            <h2 class="title">What <span>Cura Candidates</span> Have To Say -</h2>
-                            <div class="testimonial">
-                                <div class="item">
-                                    <div class="author-img">
-                                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/author.png"
-                                            alt="author">
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="author-info">Antonio, Recruiter</h3>
-                                        <div class="text">
-                                            <p>I had an incredible experience with Cura they set me up with several
-                                                interviews that lead to offers. Cam does a great job of knowing the
-                                                market and has a lot of information about the companies he partners
-                                                with. It was awesome that within our first call Cam was able to consult
-                                                with me on what opportunities would be a good fit for me and found me an
-                                                amazing opportunity with a strong career path.</p>
-                                        </div>
-                                    </div>
+                        <br>
+                        
+                        <div class="content">
+                            <h3>Description</h3>
+                            <p>This candidate should be a strong communicator and writer, able to quickly build relationships within the team and with our partners. This individual should be able to collaborate with project teams to provide communication planning and support for the Security uplift and initiatives. Flexibilty is a must and bringing new ideas to the table is very welcomed.</p>
+                            <br>
+                            <h4>Responsible for</h4>
+                            <ul>
+                                <li>Building, updating and designing SharePoint sites and pages</li>
+                                <li>Creating and managing the Keep Customer Safe Nurture email in Eloqua</li>
+                                <li>Managing all aspect of our Keep Customer Safe Swag program, via our partner vendor to promote the Security Uplift program</li>
+                                <li>Organizing and tracking program digital assets</li>
+                            </ul>
+                            <br>
+                            
+
+                            <h4>Basic Qualifications</h4>
+                            <ul>
+                                <li>3+ years experience in communication and or marketing</li>
+                                <li>Ability to work effectively under pressure and within tight timelines</li>
+                                <li>Strong writer and editor</li>
+                                <li>Ability to work with stakeholders and deliver a positive user experience</li>
+                                <li>Ability to multitask while maintaining a strong project calendar</li>
+                            </ul>
+                            <br>
+
+                            <h4>Desired Skills</h4>
+                            <ul>
+                                <li>SharePoint development</li>
+                                <li>Eloqua development</li>
+                                <li>Creative out-of-the-box thinking</li>
+                            </ul>
+                            <br>
+                            <h4>Notes</h4>
+                            <p>Cura Recruiting does not provide visa sponsorship nor will we work with Staffing Agencies.** USA Visa Holders - Please consult an attorney before applying to any Cura Recruiting job. Some visa statuses will or will not allow you to conduct freelance work with Cura Recruiting.*** Cura Recruiting employees are not eligible for work opportunities. Do not apply and send questions to support@curarecruiting.com.</p>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="widget">
+                            <div class="apply-box">
+                                <h4>Apply to this job</h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="btn-container">
+                                    <ul>
+                                        <li><a href="#" class="btn btn-apply">Apply </a></li>
+                                        <li><a href="#" class="btn btn-save"><span class="icon"><i class="fa fa-heart-o" aria-hidden="true"></i></span> Save</a></li>
+                                    </ul>
+                                </div>
+                                <div class="border-bottom"></div>
+                                <h4>Refer this job</h4>
+                                <p>Refer someone to this gig and earn $500. Just add their email below.</p>
+                                <a href="#" class="link">See how it works.</a>
+
+                                <div class="social-share-icons">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="bottom-text">
-                    <div class="watermark">
-                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/we-are-national.png" alt="">
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
+
+
+
 
 
 <section class="faqs">
@@ -208,7 +200,6 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
     </div>
 </section>
-
 
 
 <?php

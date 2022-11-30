@@ -191,7 +191,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-12">
                 <div class="content-box">
                     <div>
-                        <h2 class="title">Cura helps you achieve your goals.</h2>
+                        <h2 class="title"><span>Cura</span> helps you achieve your goals.</h2>
                         <h3 class="sub-title">Want to see how?</h3>
                         <div class="button-container">
                             <a href="#" class="btn btn-contact">CONTACT US</a>
