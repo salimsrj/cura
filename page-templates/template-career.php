@@ -35,6 +35,225 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 
+
+
+
+<section class="jobs" id="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <?php
+                // $curl = curl_init();
+
+                // curl_setopt_array($curl, [
+                //   CURLOPT_URL => "https://api.recruitcrm.io/v1/jobs",
+                //   CURLOPT_RETURNTRANSFER => true,
+                //   CURLOPT_ENCODING => "",
+                //   CURLOPT_MAXREDIRS => 10,
+                //   CURLOPT_TIMEOUT => 30,
+                //   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                //   CURLOPT_CUSTOMREQUEST => "GET",
+                //   CURLOPT_HTTPHEADER => [
+                //     "Authorization: Bearer Tm9-Ahlm5SRj49N-3wT1hJieeGKQfms19N4yBZsGL6g_Prbaa_nIzrZLYzlU2WauQeSRwBSQ0qBdKQF7xT55l18xNjU4MTcyOTIx",
+                //     "Content-Type: application/json"
+                //   ],
+                // ]);
+                
+                // $response = curl_exec($curl);
+                // $err = curl_error($curl);
+                
+                // curl_close($curl);
+                
+                // if ($err) {
+                //   echo "cURL Error #:" . $err;
+                // } else {
+                // //echo'<pre>';
+                // //echo $response;
+                // //echo'</pre>';
+                // }
+                ?>
+                <div class="job-head">
+                    <h2 class="title">Open positions</h2>
+                    <p>Cura Recruiting will help you find the sweet spot to call home.</p>
+                </div>
+                <div class="job-search-box">
+                    <div class="job-search">
+                        <div class="search-by-key">
+                                                       
+                            <div class="left-box">
+                                <!-- <input type="text" class="form-control" id="key-search" placeholder="Search Listings"> -->
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span  class="search-icon"><i class="fa fa-search"></i></span>
+                                    </div>
+                                        <input type="search" placeholder="Search Listings" class="form-control border-0">
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="right-box">
+                                <button type="submit" class="btn btn-search">Search</button>
+                            </div>
+                            
+                        </div>
+                        <div class="short-by">
+                            <div class="left-box">
+                                <label for="sortby" class="">Sort by:</label>
+                            </div>
+                            <div class="right-box">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Most Recent</option>
+                                    <option value="1">Full-Time</option>
+                                    <option value="2">Hourly</option>
+                                    <option value="3">Salary</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="open-jobs">
+                        <div class="item"  v-for="(job, key) in all_jobs.data">
+                            <article>
+                                <a :href="job.application_form_url" target="_blank">
+                                    <h3 class="job-title">{{job.name}} <span class="job-status">New</span></h3>
+                                </a>
+                                <div class="job-location"><span class="flag"><img src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png" alt=""></span>{{ job.city }}</div>
+                                <div class="short-description">
+                                    <p>We’re looking for an experienced {{ job.name}} to join our team.</p>
+                                </div>
+                                <div class="type-salary">
+                                    <ul>
+                                        <li class="type"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png" alt=""></span>Full-time</li>
+                                        <li class="salary"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png" alt=""></span>${{job.min_annual_salary}} - ${{job.max_annual_salary}}</li>
+                                    </ul>
+                                </div>                                
+                            </article>
+                        </div>
+
+
+                        <!-- <div class="item">
+                            <article>
+                                <a href="#">
+                                    <h3 class="job-title">Engineering Manager<span class="job-status">New</span></h3>
+                                </a>
+                                <div class="job-location"><span class="flag"><img src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png" alt=""></span>Remote, USA</div>
+                                <div class="short-description">
+                                    <p>We’re looking for an experienced engineering manager to join our team.</p>
+                                </div>
+                                <div class="type-salary">
+                                    <ul>
+                                        <li class="type"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png" alt=""></span>Full-time</li>
+                                        <li class="salary"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png" alt=""></span>$80k - $100k</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+
+                        <div class="item">
+                            <article>
+                                <a href="#">
+                                    <h3 class="job-title">Engineering Manager<span class="job-status">New</span></h3>
+                                </a>
+                                <div class="job-location"><span class="flag"><img src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png" alt=""></span>Remote, USA</div>
+                                <div class="short-description">
+                                    <p>We’re looking for an experienced engineering manager to join our team.</p>
+                                </div>
+                                <div class="type-salary">
+                                    <ul>
+                                        <li class="type"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png" alt=""></span>Full-time</li>
+                                        <li class="salary"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png" alt=""></span>$80k - $100k</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+
+                        <div class="item">
+                            <article>
+                                <a href="#">
+                                    <h3 class="job-title">Engineering Manager<span class="job-status">New</span></h3>
+                                </a>
+                                <div class="job-location"><span class="flag"><img src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png" alt=""></span>Remote, USA</div>
+                                <div class="short-description">
+                                    <p>We’re looking for an experienced engineering manager to join our team.</p>
+                                </div>
+                                <div class="type-salary">
+                                    <ul>
+                                        <li class="type"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png" alt=""></span>Full-time</li>
+                                        <li class="salary"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png" alt=""></span>$80k - $100k</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="item">
+                            <article>
+                                <a href="#">
+                                    <h3 class="job-title">Engineering Manager<span class="job-status">New</span></h3>
+                                </a>
+                                <div class="job-location"><span class="flag"><img src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png" alt=""></span>Remote, USA</div>
+                                <div class="short-description">
+                                    <p>We’re looking for an experienced engineering manager to join our team.</p>
+                                </div>
+                                <div class="type-salary">
+                                    <ul>
+                                        <li class="type"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png" alt=""></span>Full-time</li>
+                                        <li class="salary"><span class="icon"><img src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png" alt=""></span>$80k - $100k</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div> -->
+
+                        <v-pagination v-model="all_jobs.current_page" :page-count="all_jobs.last_page"></v-pagination>
+
+
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    Vue.component('v-pagination', window['vue-plain-pagination'])
+   new Vue({
+  el: '#app',
+
+  data () {
+    return {
+      all_jobs: ''
+    }
+  },
+  mounted () {
+    axios({
+        method: "get",
+        url: "https://api.recruitcrm.io/v1/jobs",
+        headers: {
+            Authorization: `Bearer Tm9-Ahlm5SRj49N-3wT1hJieeGKQfms19N4yBZsGL6g_Prbaa_nIzrZLYzlU2WauQeSRwBSQ0qBdKQF7xT55l18xNjU4MTcyOTIx`,
+        },
+        }).then((response) => {
+            this.all_jobs = response.data;
+        });
+  },
+  methods:{
+            async list(page=1){
+                await axios.get(`https://api.recruitcrm.io/v1/jobs?page=${page}`).then(({response})=>{
+                    this.all_jobs = response.data;
+                }).catch(({ response })=>{
+                    console.error(response)
+                })
+            }
+        }
+})
+</script>
+
 <section class="steps">
     <div class="container">
         <div class="row">
