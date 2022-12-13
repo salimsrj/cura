@@ -30,10 +30,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="buttons">
                             <ul>
                                 <li>
-                                    <a class="btn btn-banner" href="#">Find a career</a>
+                                    <a class="btn btn-banner" href="/cura-search/find-a-career/">Find a career</a>
                                 </li>
                                 <li>
-                                    <a class="btn btn-banner" href="#">Find staff</a>
+                                    <a class="btn btn-banner" href="/cura-search/find-staff/">Find staff</a>
                                 </li>
                             </ul>
                         </div>
@@ -96,7 +96,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="btn-img-box">
                             <div class="btn-container">
                                 <div class="arrow"></div>
-                                <a href="#" class="btn btn-blue">Register</a>
+                                <a href="/register" class="btn btn-blue">Register</a>
                             </div>
                             <div class="small-img">
                                 <img src="<?php echo get_stylesheet_directory_uri();?>/images/keyboard.jpg" alt="">
@@ -121,7 +121,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="contact-box">
                     <ul>
                         <li><span class="title">Let Cura get to know you</span> <span class="arrow"><img src="<?php echo get_stylesheet_directory_uri();?>/images/arrow-right.png" alt=""></span></li>
-                        <li><a href="#" class="btn btn-contact">CONTACT US</a></li>
+                        <li><a href="/contact-us/" class="btn btn-contact">CONTACT US</a></li>
                     </ul>
                 </div>
             </div>

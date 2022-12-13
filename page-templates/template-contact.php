@@ -123,8 +123,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-12">
                 <div class="btn-container">
                     <ul>
-                        <li><a href="#" class="btn btn-transparent">Log in</a></li>
-                        <li><a href="#" class="btn btn-link">Schedule A Call</a></li>
+                        <li><a href="/login/" class="btn btn-transparent">Log in</a></li>
+                        <li><a href="/contact-us/" class="btn btn-link">Schedule A Call</a></li>
                     </ul>
                 </div>
             </div>

@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 Recrutiing. We take the time to discover your wants and needs and find you exactly the
                                 candidate you’re looking for. </p>
                         </div>
-                        <a href="#" class="btn btn-green">Our services</a>
+                        <a href="/services/" class="btn btn-green"><span>Our services</span></a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="left-box">
                         <div class="left-content-box h-100">
                             <div class="title-box">
-                                <h2 class="title">We are better<span>TOGETHER</span></h2>
+                                <h2 class="title">We are better<span>TOGETHER<strong>.</strong></span></h2>
                             </div>
                             <div class="text-bottom align-self-end">
                                 <p>“We focus on finding the greatest staff available, they are the ones who help you
@@ -179,8 +179,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                             <div class="buttons">
                                 <ul>
-                                    <li><a href="#" class="btn btn-blue-green">Let’s talk</a></li>
-                                    <li><a href="#" class="btn btn-blue">Our services</a></li>
+                                    <li><a href="/contact-us/" class="btn btn-blue-green">Let’s talk</a></li>
+                                    <li><a href="/services/" class="btn btn-blue">Our services</a></li>
                                 </ul>
                             </div>
                         </div>

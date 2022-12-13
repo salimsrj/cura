@@ -112,8 +112,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <h2 class="title">Let <span>Cura</span> help you achieve your goal.</h2>
                     <div class="btn-container">
                         <ul>
-                            <li><a href="#" class="btn btn-blue-green">CONTACT US</a></li>
-                            <li><a href="#" class="btn btn-find-job">Find A Job</a></li>
+                            <li><a href="/contact-us/" class="btn btn-blue-green">CONTACT US</a></li>
+                            <li><a href="/cura-search/find-a-career/" class="btn btn-find-job">Find A Job</a></li>
                         </ul>
                     </div>
                 </div>

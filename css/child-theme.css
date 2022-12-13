@@ -15707,7 +15707,7 @@ body .btn-blue-fill:hover {
 }
 body .btn-green {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 24px;
   color: #31E1A2;
   border: 1px solid #31E1A2;
   padding: 15px;
@@ -15734,7 +15734,7 @@ body .btn-green-fill:hover {
 body a.btn.btn-contact, body .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message body a.btn-contact.button, body .woocommerce-info a.btn-contact.button, .woocommerce-info body a.btn-contact.button {
   background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
   border-radius: 5px;
-  width: 380px;
+  min-width: 280px;
   max-width: 100%;
   padding: 15px;
   font-size: 18px;
@@ -15756,18 +15756,58 @@ body .accordion-button::after {
   width: 20px;
   height: 20px;
   margin-left: auto;
-  content: "\f067";
+  content: "+";
   background-image: none;
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
   font-family: fontawesome;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 20px;
+  font-weight: 700;
 }
 body .accordion-button:not(.collapsed)::after {
   background-image: none;
   transform: rotate(-45deg);
+}
+body .form-control:focus, body .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 body .wpcf7-validation-errors:focus, body .wpcf7 input[type=text]:focus, .wpcf7 body input[type=text]:focus,
+body .wpcf7 input[type=search]:focus,
+.wpcf7 body input[type=search]:focus,
+body .wpcf7 input[type=url]:focus,
+.wpcf7 body input[type=url]:focus,
+body .wpcf7 input[type=tel]:focus,
+.wpcf7 body input[type=tel]:focus,
+body .wpcf7 input[type=number]:focus,
+.wpcf7 body input[type=number]:focus,
+body .wpcf7 input[type=range]:focus,
+.wpcf7 body input[type=range]:focus,
+body .wpcf7 input[type=date]:focus,
+.wpcf7 body input[type=date]:focus,
+body .wpcf7 input[type=month]:focus,
+.wpcf7 body input[type=month]:focus,
+body .wpcf7 input[type=week]:focus,
+.wpcf7 body input[type=week]:focus,
+body .wpcf7 input[type=time]:focus,
+.wpcf7 body input[type=time]:focus,
+body .wpcf7 input[type=datetime]:focus,
+.wpcf7 body input[type=datetime]:focus,
+body .wpcf7 input[type=datetime-local]:focus,
+.wpcf7 body input[type=datetime-local]:focus,
+body .wpcf7 input[type=color]:focus,
+.wpcf7 body input[type=color]:focus,
+body .wpcf7 input[type=email]:focus,
+.wpcf7 body input[type=email]:focus,
+body .wpcf7 input[type=file]:focus,
+.wpcf7 body input[type=file]:focus,
+body .wpcf7 input[type=submit]:focus,
+.wpcf7 body input[type=submit]:focus,
+body .wpcf7 select:focus,
+.wpcf7 body select:focus,
+body .wpcf7 textarea:focus,
+.wpcf7 body textarea:focus, body .widget_categories select:focus, .widget_categories body select:focus,
+body .widget_archive select:focus,
+.widget_archive body select:focus {
+  box-shadow: none;
 }
 body nav.navbar {
   z-index: 999;
@@ -15822,7 +15862,7 @@ body nav.navbar ul.navbar-nav li:nth-child(4) a.nav-link {
   }
 }
 
-nav.navbar.navbar-expand-md.navbar-dark.bg-primary {
+nav.navbar.navbar-dark.bg-primary {
   background-color: rgba(53, 53, 53, 0.6) !important;
   position: absolute;
   width: 100%;
@@ -15834,6 +15874,7 @@ a.navbar-brand.custom-logo-link {
 
 section.home-banner {
   min-height: 880px;
+  position: relative;
   padding: 80px 0;
 }
 @media (max-width: 767px) {
@@ -15844,8 +15885,15 @@ section.home-banner {
 section.home-banner .banner-box {
   max-width: 650px;
   min-height: 800px;
+  position: relative;
+  z-index: 9;
   display: flex;
   align-items: center;
+}
+@media (max-width: 991px) {
+  section.home-banner .banner-box {
+    max-width: 500px;
+  }
 }
 @media (max-width: 767px) {
   section.home-banner .banner-box {
@@ -15869,14 +15917,13 @@ section.home-banner .banner-box h2.title, section.home-banner .banner-box .title
   }
 }
 section.home-banner .banner-box h2.title span, section.home-banner .banner-box .title.h2 span {
-  color: #C4C4C4;
+  color: rgba(255, 255, 255, 0.4);
 }
 section.home-banner .banner-box .banner-content {
   font-size: 24px;
   line-height: 34px;
   font-weight: bold;
   color: #c4c4c4;
-  border-top: 1px solid #c4c4c4;
   max-width: 450px;
   padding: 20px 0;
 }
@@ -15912,6 +15959,11 @@ section.home-banner .banner-box .buttons ul li:last-child {
 section.home-banner .banner-col {
   position: relative;
 }
+@media (max-width: 991px) {
+  section.home-banner .banner-col {
+    position: inherit;
+  }
+}
 section.home-banner .banner-col .banner-image {
   max-width: 330px;
   position: absolute;
@@ -15919,6 +15971,13 @@ section.home-banner .banner-col .banner-image {
   top: 24%;
   border-radius: 100px 0;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  section.home-banner .banner-col .banner-image {
+    max-width: 200px;
+    right: 15px;
+    border-radius: 80px 0;
+  }
 }
 @media (max-width: 767px) {
   section.home-banner .banner-col .banner-image {
@@ -15960,7 +16019,7 @@ section.who-we-are h2.title::after, section.who-we-are .title.h2::after {
   margin-top: 15px;
 }
 section.who-we-are .button-container {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 section.who-we-are .btn.btn-blue, section.who-we-are .wpcf7 input.btn-blue[type=submit], .wpcf7 section.who-we-are input.btn-blue[type=submit], section.who-we-are .woocommerce-notices-wrapper .woocommerce-message a.btn-blue.button, .woocommerce-notices-wrapper .woocommerce-message section.who-we-are a.btn-blue.button, section.who-we-are .woocommerce-info a.btn-blue.button, .woocommerce-info section.who-we-are a.btn-blue.button {
   background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
@@ -16029,7 +16088,7 @@ section.featurs .content-box h2.title::after, section.featurs .content-box .titl
 }
 section.featurs .content-box .content {
   padding: 60px 0;
-  max-width: 700px;
+  max-width: 725px;
 }
 section.featurs .two-box-with-icon {
   display: flex;
@@ -16172,17 +16231,25 @@ section.fill-retention .image-container {
 }
 section.fill-retention .fill-retention-box {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 80px;
 }
 section.fill-retention .fill-retention-box .fill {
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 70px;
   font-size: 28px;
   line-height: 28px;
   font-weight: 700;
+  border-right: 1px solid;
+  border-image-source: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-image-slice: 1;
 }
 section.fill-retention .fill-retention-box .retention {
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 70px;
   font-size: 28px;
   line-height: 28px;
   font-weight: 700;
@@ -16239,9 +16306,9 @@ section.text-with-btn .background {
   height: 100%;
   width: 50%;
   position: absolute;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  top: 30%;
+  top: 50%;
 }
 section.text-with-btn .buttons {
   margin-bottom: 140px;
@@ -16731,7 +16798,7 @@ section.inner-contact .contact-box ul li a.btn.btn-contact, section.inner-contac
   background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
   border-radius: 5px;
   padding: 15px 30px;
-  min-width: 350px;
+  min-width: 230px;
 }
 @media (max-width: 767px) {
   section.inner-contact .contact-box ul li a.btn.btn-contact, section.inner-contact .contact-box ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-contact.button, .woocommerce-notices-wrapper .woocommerce-message section.inner-contact .contact-box ul li a.btn-contact.button, section.inner-contact .contact-box ul li .woocommerce-info a.btn-contact.button, .woocommerce-info section.inner-contact .contact-box ul li a.btn-contact.button {
@@ -16973,7 +17040,7 @@ section.steps .watermark {
 }
 
 section.faqs {
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.4) 0, rgba(255, 255, 255, 0.2) 50.06%);
   padding: 80px 0;
 }
 section.faqs .content-box {
@@ -17008,16 +17075,16 @@ section.faqs .content-box .btn-container ul li {
   display: inline-block;
 }
 section.faqs .content-box .btn-container ul li a.btn.btn-blue-green, section.faqs .content-box .btn-container ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue-green.button, .woocommerce-notices-wrapper .woocommerce-message section.faqs .content-box .btn-container ul li a.btn-blue-green.button, section.faqs .content-box .btn-container ul li .woocommerce-info a.btn-blue-green.button, .woocommerce-info section.faqs .content-box .btn-container ul li a.btn-blue-green.button {
-  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  background: linear-gradient(175deg, #00afff 13.27%, #31e1a2 105.19%);
   border-radius: 5px;
   padding: 15px;
-  min-width: 250px;
+  min-width: 230px;
   color: #FFFFFF;
 }
 section.faqs .content-box .btn-container ul li a.btn.btn-find-job, section.faqs .content-box .btn-container ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-find-job.button, .woocommerce-notices-wrapper .woocommerce-message section.faqs .content-box .btn-container ul li a.btn-find-job.button, section.faqs .content-box .btn-container ul li .woocommerce-info a.btn-find-job.button, .woocommerce-info section.faqs .content-box .btn-container ul li a.btn-find-job.button {
   font-size: 24px;
   line-height: 34px;
-  color: #00AFFF;
+  color: #31E1A2;
   font-weight: 700;
   padding: 15px 30px;
 }
@@ -17034,6 +17101,10 @@ section.faqs .faq-box h3.faq-title, section.faqs .faq-box .faq-title.h3 {
     line-height: 35px;
   }
 }
+section.faqs .faq-box .accordion-button:not(.collapsed) {
+  color: #353535;
+  box-shadow: none;
+}
 section.faqs .faq-box .accordion-item {
   background-color: transparent;
   border-top: 1px solid #353535;
@@ -17044,6 +17115,11 @@ section.faqs .faq-box .accordion-item {
 }
 section.faqs .faq-box .accordion-item:last-child {
   border-bottom: 1px solid #353535;
+}
+section.faqs .faq-box .accordion-item h2.accordion-header, section.faqs .faq-box .accordion-item .accordion-header.h2 {
+  font-size: 16px;
+  line-height: 22.5px;
+  margin-bottom: 10px;
 }
 section.faqs .faq-box .accordion-item button.accordion-button {
   background: transparent;
@@ -17058,31 +17134,43 @@ section.faqs .faq-box .accordion-item .accordion-body {
 }
 
 section.inner-banner.style-3 .banner-content {
-  min-height: 100vh;
+  min-height: 880px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px 0;
 }
+@media (max-width: 767px) {
+  section.inner-banner.style-3 .banner-content {
+    min-height: 580px;
+  }
+}
 section.inner-banner.style-3 .banner-content .content-box {
   text-align: center;
-  max-width: 650px;
+  max-width: 800px;
 }
 section.inner-banner.style-3 .banner-content .content-box h2.title, section.inner-banner.style-3 .banner-content .content-box .title.h2 {
   font-size: 55px;
   line-height: 65px;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   section.inner-banner.style-3 .banner-content .content-box h2.title, section.inner-banner.style-3 .banner-content .content-box .title.h2 {
     font-size: 35px;
     line-height: 45px;
+    margin-bottom: 40px;
   }
 }
 section.inner-banner.style-3 .banner-content .content-box h2.title span, section.inner-banner.style-3 .banner-content .content-box .title.h2 span {
   color: #00AFFF;
+}
+@media (min-width: 768px) {
+  section.inner-banner.style-3 .banner-content .content-box .btn-container a.btn-blue {
+    min-width: 355px;
+  }
 }
 
 section.why-choose-us {
@@ -17098,6 +17186,7 @@ section.why-choose-us .text-img-block {
 }
 section.why-choose-us .text-img-block .text-container {
   width: 50%;
+  max-width: 540px;
 }
 @media (max-width: 767px) {
   section.why-choose-us .text-img-block .text-container {
@@ -17143,6 +17232,10 @@ section.why-choose-us .text-img-block .buttons-container ul li a.btn.btn-blue, s
   max-width: auto;
   min-width: 120px;
 }
+section.why-choose-us .text-img-block .buttons-container ul li a.btn.btn-blue-fill, section.why-choose-us .text-img-block .buttons-container ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue-fill.button, .woocommerce-notices-wrapper .woocommerce-message section.why-choose-us .text-img-block .buttons-container ul li a.btn-blue-fill.button, section.why-choose-us .text-img-block .buttons-container ul li .woocommerce-info a.btn-blue-fill.button, .woocommerce-info section.why-choose-us .text-img-block .buttons-container ul li a.btn-blue-fill.button {
+  max-width: auto;
+  min-width: 120px;
+}
 section.why-choose-us .text-img-block .left-image-box {
   max-width: 450px;
   border-radius: 100px 0;
@@ -17170,7 +17263,7 @@ section.why-choose-us .our-featurs {
 section.why-choose-us .our-featurs .featur-list {
   max-width: 430px;
   margin-bottom: 70px;
-  margin-left: 15%;
+  margin-left: 20%;
   z-index: 9;
   position: relative;
 }
@@ -17189,6 +17282,14 @@ section.why-choose-us .our-featurs .featur-list ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  background: url("../images/border-bg.png");
+  background-size: 100% 95%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  section.why-choose-us .our-featurs .featur-list ul {
+    background: none;
+  }
 }
 section.why-choose-us .our-featurs .featur-list ul li {
   width: 50%;
@@ -17200,7 +17301,8 @@ section.why-choose-us .our-featurs .featur-list ul li {
   border-top: 0;
   font-size: 24px;
   line-height: 34px;
-  border-image-source: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+  font-weight: 700;
+  border: none;
 }
 @media (max-width: 767px) {
   section.why-choose-us .our-featurs .featur-list ul li {
@@ -17299,6 +17401,9 @@ section.why-choose-us .contact-with-team .search-contact .search-box .box.boxsty
   box-shadow: 4px 4px 38px 10px rgba(0, 0, 0, 0.06);
   border-radius: 100px 0px;
 }
+section.why-choose-us .contact-with-team .search-contact .search-box .box.boxstyle-1 .content {
+  margin-bottom: 65px;
+}
 section.why-choose-us .contact-with-team .search-contact .search-box .box.boxstyle-1 a.learn-more {
   color: #00AFFF;
 }
@@ -17359,7 +17464,9 @@ section.why-choose-us .contact-with-team .search-contact .contact-box a.btn.btn-
 
 section.inner-banner.style-4 .banner-content {
   min-height: 650px;
-  padding: 150px 0 60px;
+  padding: 150px 0 30px;
+  display: flex;
+  align-items: flex-end;
 }
 section.inner-banner.style-4 .banner-content .content-box {
   max-width: 50%;
@@ -17388,6 +17495,7 @@ section.inner-banner.style-4 .banner-content .content-box h2.title span, section
 section.inner-banner.style-4 .banner-content .content-box .btns-container ul li {
   display: inline-block;
   margin-right: 50px;
+  margin-bottom: 15px;
 }
 @media (max-width: 767px) {
   section.inner-banner.style-4 .banner-content .content-box .btns-container ul li {
@@ -17408,10 +17516,15 @@ section.inner-banner.style-4 .banner-img {
   overflow: hidden;
   border-radius: 0 0 0 100px;
 }
+@media (max-width: 991px) {
+  section.inner-banner.style-4 .banner-img {
+    width: calc((100% - 1200px) / 2 + 440px + 50px);
+  }
+}
 
 section.three-col-text {
   padding: 100px 0 150px;
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.4) 0, rgba(255, 255, 255, 0.2) 50.06%);
 }
 @media (max-width: 767px) {
   section.three-col-text {
@@ -17419,7 +17532,7 @@ section.three-col-text {
   }
 }
 section.three-col-text article {
-  max-width: 300px;
+  max-width: 315px;
   z-index: 1;
   position: relative;
 }
@@ -17441,7 +17554,7 @@ section.three-col-text article h3.title::after, section.three-col-text article .
   content: "";
   width: 60px;
   height: 1px;
-  background-color: #00AFFF;
+  background-color: #31E1A2;
   display: block;
   margin-top: 20px;
 }
@@ -17459,7 +17572,6 @@ section.three-col-text article h3.title::after, section.three-col-text article .
     content: "";
     width: 60px;
     height: 1px;
-    background-color: #FFFFFF;
     display: block;
     margin-top: 20px;
   }
@@ -17541,6 +17653,11 @@ section.two-col-text-img .two-col-box .second-col .content-box .content::after {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+section.two-col-text-img .two-col-box .second-col .content-box h2.title, section.two-col-text-img .two-col-box .second-col .content-box .title.h2 {
+  font-size: 35px;
+  line-height: 50px;
+  max-width: 550px;
+}
 section.two-col-text-img .two-col-box .second-col .img-with-btns {
   display: flex;
   flex-wrap: wrap;
@@ -17609,7 +17726,6 @@ section.two-col-text-img .two-col-box .second-col .img-with-btns .btns-container
 }
 
 section.inner-banner.style-5 .banner-content {
-  height: 100vh;
   min-height: 880px;
   display: flex;
   align-items: center;
@@ -17670,6 +17786,9 @@ section.text-with-img .content-img-box .content-box h2.title, section.text-with-
 }
 section.text-with-img .content-img-box .content-box h2.title span, section.text-with-img .content-img-box .content-box .title.h2 span {
   color: #31E1A2;
+}
+section.text-with-img .content-img-box .content-box .content {
+  max-width: 620px;
 }
 section.text-with-img .content-img-box .image-box {
   width: 30%;
@@ -17760,6 +17879,9 @@ section.two-col-text .box.boxstyle-2 {
   opacity: 0.85;
   border-radius: 0px 100px 0px 100px;
 }
+section.two-col-text .box.boxstyle-2 .content {
+  margin-bottom: 40px;
+}
 @media (max-width: 767px) {
   section.two-col-text .box.boxstyle-2 {
     border-radius: 0 50px 0 50px;
@@ -17801,7 +17923,7 @@ section.inner-banner.style-6 {
   padding: 100px 0;
 }
 section.inner-banner.style-6 .banner-content {
-  min-height: 100vh;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17872,17 +17994,241 @@ section.text-list-with-img .text-list-img-box .text-list-box .text-list ul li ar
   border-left: 2px solid #31E1A2;
   padding-left: 20px;
 }
-section.text-list-with-img .text-list-img-box .img-box {
+section.text-list-with-img .text-list-img-box .cura-jobs {
   width: 50%;
+  /* Track */
+  /* Handle */
 }
 @media (max-width: 767px) {
-  section.text-list-with-img .text-list-img-box .img-box {
+  section.text-list-with-img .text-list-img-box .cura-jobs {
     width: 100%;
   }
 }
-section.text-list-with-img .text-list-img-box .img-box .image-container {
-  border-radius: 5px;
+section.text-list-with-img .text-list-img-box .cura-jobs ::-webkit-scrollbar {
+  width: 8px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs ::-webkit-scrollbar-track {
+  background: transparent;
+  width: 10px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs ::-webkit-scrollbar-thumb {
+  background: #EAECF0;
+  border-radius: 8px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 50px;
+  background-color: #FFFFFF;
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-head {
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-head h2.title, section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-head .title.h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search-box {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 65px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key {
+  width: 60%;
+  display: flex;
+}
+@media (max-width: 767px) {
+  section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key {
+    width: 100%;
+  }
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group {
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
   overflow: hidden;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .form-control, section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 .wpcf7-validation-errors, .wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7-validation-errors, section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=text], .wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=text],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=search],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=search],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=url],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=url],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=tel],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=tel],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=number],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=number],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=range],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=range],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=date],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=date],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=month],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=month],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=week],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=week],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=time],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=time],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=datetime],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=datetime],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=datetime-local],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=datetime-local],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=color],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=color],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=email],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=email],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=file],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=file],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 input[type=submit],
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group input[type=submit],
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 select,
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group select,
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .wpcf7 textarea,
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group textarea, section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .widget_categories select, .widget_categories section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group select,
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group .widget_archive select,
+.widget_archive section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .input-group select {
+  min-height: 48px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key sapn.search-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  color: #667085;
+  font-size: 20px;
+  line-height: 20px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key button.btn.btn-search {
+  padding: 12px 30px;
+  font-weight: 700;
+  background-color: #00AFFF;
+  color: #FFFFFF;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .left-box {
+  width: 70%;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .search-by-key .right-box {
+  width: 30%;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by {
+  display: flex;
+  width: 100%;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by .left-box {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: left;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by .right-box {
+  width: 70%;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by select.form-select.form-control,
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by .wpcf7 select.form-select,
+.wpcf7 section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by select.form-select, section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by .widget_categories select.form-select, .widget_categories section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by select.form-select,
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by .widget_archive select.form-select,
+.widget_archive section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .job-search .short-by select.form-select {
+  min-height: 48px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item {
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  padding: 24px;
+  color: #475467;
+  margin-bottom: 25px;
+  position: relative;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item h3.job-title, section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .job-title.h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+  margin-bottom: 15px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item ul {
+  padding: 0;
+  margin-bottom: 15px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item ul li {
+  display: inline-block;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item span.job-status {
+  display: inline-block;
+  font-size: 15px;
+  padding: 2px 15px;
+  background-color: rgba(49, 225, 162, 0.13);
+  margin-left: 14px;
+  border-radius: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #31E1A2;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item span.job-status::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-size: 8px;
+  line-height: 20px;
+  margin-right: 6px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .short-description {
+  margin-bottom: 30px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .type-salary ul {
+  margin: 0;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .type-salary ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .type-salary ul li:last-child {
+  margin-right: 0;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .type-salary ul li .icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .job-location {
+  background: #F2F4F7;
+  mix-blend-mode: multiply;
+  border-radius: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 10px;
+  top: 25px;
+  right: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+section.text-list-with-img .text-list-img-box .cura-jobs .cura-jobs-container .jobs-box .open-jobs .item .job-location .flag {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .opportunity-customer-testimonials {
@@ -17908,7 +18254,7 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
 }
 .opportunity-customer-testimonials .opportunity h2.title, .opportunity-customer-testimonials .opportunity .title.h2 {
   max-width: 500px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .opportunity-customer-testimonials .opportunity h2.title::after, .opportunity-customer-testimonials .opportunity .title.h2::after {
   content: "";
@@ -17926,6 +18272,7 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
   line-height: 34px;
   margin-bottom: 50px;
   position: relative;
+  text-transform: uppercase;
 }
 .opportunity-customer-testimonials .opportunity .opportunity-list ul li::before {
   content: "";
@@ -17944,6 +18291,14 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
   max-width: 200px;
   display: inline-block;
 }
+.opportunity-customer-testimonials .candidates-testimonials {
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .opportunity-customer-testimonials .candidates-testimonials {
+    margin-bottom: 0;
+  }
+}
 .opportunity-customer-testimonials .candidates-testimonials h2.title, .opportunity-customer-testimonials .candidates-testimonials .title.h2 {
   font-size: 40px;
   line-height: 50px;
@@ -17959,7 +18314,7 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
   }
 }
 .opportunity-customer-testimonials .candidates-testimonials h2.title span, .opportunity-customer-testimonials .candidates-testimonials .title.h2 span {
-  background: linear-gradient(165deg, #00afff 36.19%, #31e1a2 53.22%), linear-gradient(0deg, #ffffff, #ffffff);
+  background: linear-gradient(180.78deg, #00afff 23.22%, #31e1a2 80.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -17991,20 +18346,43 @@ section.text-list-with-img .text-list-img-box .img-box .image-container {
 
 section.inner-banner.style-7 {
   padding: 250px 0 100px;
+  position: relative;
+  margin-bottom: 160px;
 }
 @media (max-width: 767px) {
   section.inner-banner.style-7 {
     padding: 100px 0;
+    margin-bottom: 60px;
+  }
+}
+section.inner-banner.style-7::after {
+  content: "";
+  height: 1px;
+  width: 90%;
+  display: block;
+  background: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+  position: absolute;
+  bottom: -160px;
+  right: 0;
+}
+@media (max-width: 767px) {
+  section.inner-banner.style-7::after {
+    bottom: -60px;
   }
 }
 section.inner-banner.style-7 .banner-content {
-  height: 100vh;
-  min-height: 1126px;
+  min-height: 775px;
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
+}
+section.inner-banner.style-7 .banner-content h2.title span, section.inner-banner.style-7 .banner-content .title.h2 span {
+  display: block;
+  background: linear-gradient(175deg, #00afff 10.93%, #31e1a2 99.86%), linear-gradient(55deg, #353535, #353535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 767px) {
   section.inner-banner.style-7 .banner-content {
@@ -18036,15 +18414,38 @@ section.inner-banner.style-7 .banner-content .btn-green {
   background: linear-gradient(139.51deg, #00AFFF 11.65%, #31E1A2 87.73%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border-width: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-image-source: linear-gradient(119.99deg, #00AFFF 14.06%, #31E1A2 89.23%);
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+section.inner-banner.style-7 .banner-content .btn-green:hover {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-background-clip: inherit;
+  font-weight: 400;
 }
 
 section.about-us {
   padding: 150px 0;
+  position: relative;
 }
 @media (max-width: 767px) {
   section.about-us {
     padding: 50px 0;
   }
+}
+section.about-us::after {
+  content: "";
+  height: 1px;
+  width: 90%;
+  display: block;
+  background: linear-gradient(90deg, #00AFFF 2.22%, #31E1A2 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 section.about-us .about-content {
   display: flex;
@@ -18084,7 +18485,7 @@ section.about-us .about-content .left-box .left-content-box .title-box h2.title,
   font-weight: 700;
 }
 section.about-us .about-content .left-box .left-content-box .title-box h2.title span, section.about-us .about-content .left-box .left-content-box .title-box .title.h2 span {
-  background: linear-gradient(154.19deg, #00AFFF 41.93%, #31E1A2 101.86%), linear-gradient(0deg, #353535, #353535);
+  background: linear-gradient(175deg, #00afff 10.93%, #31e1a2 99.86%), linear-gradient(55deg, #353535, #353535);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 75px;
@@ -18096,6 +18497,9 @@ section.about-us .about-content .left-box .left-content-box .title-box h2.title 
     font-size: 50px;
     line-height: 65px;
   }
+}
+section.about-us .about-content .left-box .left-content-box .title-box h2.title span strong, section.about-us .about-content .left-box .left-content-box .title-box .title.h2 span strong {
+  -webkit-text-fill-color: #353535;
 }
 section.about-us .about-content .left-box .left-content-box .title-box h2.title::after, section.about-us .about-content .left-box .left-content-box .title-box .title.h2::after {
   content: "";
@@ -18150,7 +18554,6 @@ section.about-us .about-content .right-box .content-box article h3, section.abou
 section.our-team {
   position: relative;
   padding: 150px 0;
-  border-top: 1px solid #31E1A2;
 }
 @media (max-width: 767px) {
   section.our-team {
@@ -18279,6 +18682,7 @@ section.our-team .connect-with-team .content-box .buttons ul li a.btn.btn-blue-g
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
 }
 section.our-team .connect-with-team .content-box .buttons ul li a.btn.btn-blue-green:hover, section.our-team .connect-with-team .content-box .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.btn-blue-green.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.our-team .connect-with-team .content-box .buttons ul li a.btn-blue-green.button:hover, section.our-team .connect-with-team .content-box .buttons ul li .woocommerce-info a.btn-blue-green.button:hover, .woocommerce-info section.our-team .connect-with-team .content-box .buttons ul li a.btn-blue-green.button:hover {
   background: transparent;
@@ -18295,6 +18699,7 @@ section.our-team .connect-with-team .content-box .buttons ul li .btn-blue {
   padding: 15px 30px;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Roboto", sans-serif;
 }
 section.our-team .connect-with-team .content-box .buttons ul li .btn-blue:hover {
   background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
@@ -18321,13 +18726,13 @@ section.our-team .connect-with-team .image-box .image-container {
 }
 
 section.inner-banner.style-8 {
-  padding: 100px 0;
+  padding: 180px 0 80px;
 }
 section.inner-banner.style-8 .banner-content {
-  min-height: 100vh;
+  min-height: 575px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   gap: 100px;
 }
 @media (max-width: 767px) {
@@ -18346,13 +18751,20 @@ section.inner-banner.style-8 .banner-content h2.title::after, section.inner-bann
   background-color: #353535;
   margin-top: 35px;
 }
+section.inner-banner.style-8 .banner-content .content {
+  max-width: 465px;
+  margin-bottom: 50px;
+}
 section.inner-banner.style-8 .banner-content .buttons ul li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 20px;
   margin-bottom: 15px;
 }
 section.inner-banner.style-8 .banner-content .buttons ul li:last-child {
   margin-right: 0;
+}
+section.inner-banner.style-8 .banner-content .buttons ul li a.btn, section.inner-banner.style-8 .banner-content .buttons ul li .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message section.inner-banner.style-8 .banner-content .buttons ul li a.button, section.inner-banner.style-8 .banner-content .buttons ul li .woocommerce-info a.button, .woocommerce-info section.inner-banner.style-8 .banner-content .buttons ul li a.button {
+  min-width: 220px;
 }
 section.inner-banner.style-8 .banner-content .left-box {
   width: calc(50% - 50px);
@@ -18408,6 +18820,7 @@ section.two-col-text-with-img .content-box .right-col {
 }
 section.two-col-text-with-img .content-box .image-container {
   max-height: 540px;
+  max-width: 540px;
   overflow: hidden;
   vertical-align: middle;
   position: relative;
@@ -18440,6 +18853,7 @@ section.two-col-text-with-img .content-box .content h3.title::after, section.two
 }
 section.two-col-text-with-img .content-box .content .text {
   margin-bottom: 80px;
+  max-width: 400px;
 }
 section.two-col-text-with-img .content-box .content a.link {
   color: #00AFFF;
@@ -18505,6 +18919,11 @@ section.contact.contact-style-2 .content-box h2.title, section.contact.contact-s
   border-right: 1px solid #00AFFF;
   padding: 0 30px;
 }
+@media (max-width: 991px) {
+  .setp-section .steps ul li {
+    padding: 0 15px;
+  }
+}
 @media (max-width: 767px) {
   .setp-section .steps ul li {
     padding: 0;
@@ -18528,10 +18947,10 @@ section.contact.contact-style-2 .content-box h2.title, section.contact.contact-s
   margin-bottom: 20px;
   display: inline-block;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .setp-section .steps ul li span.qty {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 45px;
     margin-bottom: 5px;
   }
 }
@@ -18540,10 +18959,15 @@ section.contact.contact-style-2 .content-box h2.title, section.contact.contact-s
   line-height: 25px;
   font-weight: 700;
 }
+@media (max-width: 991px) {
+  .setp-section .steps ul li .step-text {
+    font-size: 20px;
+  }
+}
 
 section.contact-form {
   padding: 250px 0 100px;
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0.8) 0%, rgba(255, 255, 255, 0.32) 74.06%);
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.4) 0%, rgba(255, 255, 255, 0.2) 74.06%);
 }
 section.contact-form .content-box h2.title, section.contact-form .content-box .title.h2 {
   max-width: 800px;
@@ -18552,13 +18976,18 @@ section.contact-form .content-box h2.title, section.contact-form .content-box .t
   margin-bottom: 100px;
 }
 section.contact-form .content-box h2.title span, section.contact-form .content-box .title.h2 span {
-  background: linear-gradient(147.71deg, #00AFFF 3.47%, #31E1A2 53.89%), linear-gradient(0deg, #353535, #353535);
+  background: linear-gradient(178deg, #00AFFF 54.47%, #31E1A2 72.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 section.contact-form .content-box .content {
   max-width: 885px;
   margin-bottom: 50px;
+}
+section.contact-form .content-box .content h3, section.contact-form .content-box .content .h3 {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 20px;
 }
 section.contact-form .form-container .gform_wrapper.gravity-theme .gfield input.large,
 section.contact-form .form-container .gform_wrapper.gravity-theme .gfield select.large {
@@ -18586,6 +19015,8 @@ section.contact-form .form-container input[type=submit].gform_button.button {
   color: #FFFFFF;
   border: none;
   min-height: 60px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 section.contact-form .form-container input[type=submit].gform_button.button:hover {
   background: transparent;
@@ -18660,7 +19091,7 @@ section.opportunity-customer-testimonials.style-2 .opportunity .opportunity-list
   top: -15px;
 }
 section.opportunity-customer-testimonials.style-2 .opportunity .image-bg {
-  max-width: 25%;
+  width: 35%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -18668,6 +19099,7 @@ section.opportunity-customer-testimonials.style-2 .opportunity .image-bg {
   max-height: 550px;
   overflow: hidden;
   border-radius: 0 100px 0 0;
+  max-width: 550px;
 }
 section.opportunity-customer-testimonials.style-2 .opportunity .content-box {
   position: absolute;
@@ -18702,13 +19134,20 @@ section.buttons-with-bg .btn-container ul li:last-child {
 }
 section.buttons-with-bg a.btn.btn-transparent, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-transparent.button, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-transparent.button, section.buttons-with-bg .woocommerce-info a.btn-transparent.button, .woocommerce-info section.buttons-with-bg a.btn-transparent.button {
   background: transparent;
-  color: #00AFFF;
-  border: 1px solid #00AFFF;
-  background: linear-gradient(174.77deg, #00AFFF 4.19%, #31E1A2 111.99%);
+  background: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   min-width: 280px;
   padding: 15px;
+  /*border*/
+  border-width: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-image-source: linear-gradient(150.67deg, #00AFFF 13.27%, #31E1A2 105.19%);
+  border-image-slice: 1;
+  border-radius: 5px;
+  /*end border*/
 }
 section.buttons-with-bg a.btn.btn-transparent:hover, section.buttons-with-bg .woocommerce-notices-wrapper .woocommerce-message a.btn-transparent.button:hover, .woocommerce-notices-wrapper .woocommerce-message section.buttons-with-bg a.btn-transparent.button:hover, section.buttons-with-bg .woocommerce-info a.btn-transparent.button:hover, .woocommerce-info section.buttons-with-bg a.btn-transparent.button:hover {
   background: linear-gradient(174.77deg, #00AFFF 4.19%, #31E1A2 111.99%);
@@ -18722,7 +19161,7 @@ section.buttons-with-bg a.btn.btn-link, section.buttons-with-bg .woocommerce-not
   padding: 15px;
   border: none;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 34px;
   font-weight: 700;
   text-decoration: none;
   background: linear-gradient(174.77deg, #00AFFF 4.19%, #31E1A2 111.99%);
@@ -18895,6 +19334,228 @@ section.job-details .job-content-box .sidebar .apply-box .social-share-icons ul 
   color: #00AFFF;
 }
 
+section.jobs {
+  padding: 100px 0 0;
+}
+section.jobs .job-head {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 65px;
+}
+section.jobs .job-head h2.title, section.jobs .job-head .title.h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-bottom: 25px;
+}
+section.jobs .job-search-box {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+section.jobs .job-search {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 65px;
+}
+section.jobs .job-search .search-by-key {
+  width: 60%;
+  display: flex;
+}
+@media (max-width: 767px) {
+  section.jobs .job-search .search-by-key {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+section.jobs .job-search .search-by-key .input-group {
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+section.jobs .job-search .search-by-key .input-group .form-control, section.jobs .job-search .search-by-key .input-group .wpcf7 .wpcf7-validation-errors, .wpcf7 section.jobs .job-search .search-by-key .input-group .wpcf7-validation-errors, section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=text], .wpcf7 section.jobs .job-search .search-by-key .input-group input[type=text],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=search],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=search],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=url],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=url],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=tel],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=tel],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=number],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=number],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=range],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=range],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=date],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=date],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=month],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=month],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=week],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=week],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=time],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=time],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=datetime],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=datetime],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=datetime-local],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=datetime-local],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=color],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=color],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=email],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=email],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=file],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=file],
+section.jobs .job-search .search-by-key .input-group .wpcf7 input[type=submit],
+.wpcf7 section.jobs .job-search .search-by-key .input-group input[type=submit],
+section.jobs .job-search .search-by-key .input-group .wpcf7 select,
+.wpcf7 section.jobs .job-search .search-by-key .input-group select,
+section.jobs .job-search .search-by-key .input-group .wpcf7 textarea,
+.wpcf7 section.jobs .job-search .search-by-key .input-group textarea, section.jobs .job-search .search-by-key .input-group .widget_categories select, .widget_categories section.jobs .job-search .search-by-key .input-group select,
+section.jobs .job-search .search-by-key .input-group .widget_archive select,
+.widget_archive section.jobs .job-search .search-by-key .input-group select {
+  min-height: 48px;
+}
+section.jobs .job-search .search-by-key sapn.search-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  color: #667085;
+  font-size: 20px;
+  line-height: 20px;
+}
+section.jobs .job-search .search-by-key button.btn.btn-search {
+  padding: 12px 30px;
+  font-weight: 700;
+  background-color: #00AFFF;
+  color: #FFFFFF;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+section.jobs .job-search .search-by-key .left-box {
+  width: 70%;
+}
+section.jobs .job-search .search-by-key .right-box {
+  width: 30%;
+}
+section.jobs .job-search .short-by {
+  display: flex;
+  width: 40%;
+}
+@media (max-width: 767px) {
+  section.jobs .job-search .short-by {
+    width: 100%;
+  }
+}
+section.jobs .job-search .short-by .left-box {
+  width: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+section.jobs .job-search .short-by .right-box {
+  width: calc(100% - 80px);
+}
+section.jobs .job-search .short-by select.form-select.form-control,
+section.jobs .job-search .short-by .wpcf7 select.form-select,
+.wpcf7 section.jobs .job-search .short-by select.form-select, section.jobs .job-search .short-by .widget_categories select.form-select, .widget_categories section.jobs .job-search .short-by select.form-select,
+section.jobs .job-search .short-by .widget_archive select.form-select,
+.widget_archive section.jobs .job-search .short-by select.form-select {
+  min-height: 48px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+section.jobs .open-jobs .item {
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  padding: 24px;
+  color: #475467;
+  margin-bottom: 25px;
+  position: relative;
+}
+section.jobs .open-jobs .item h3.job-title, section.jobs .open-jobs .item .job-title.h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+  max-width: 75%;
+}
+@media (max-width: 767px) {
+  section.jobs .open-jobs .item h3.job-title, section.jobs .open-jobs .item .job-title.h3 {
+    width: 100%;
+  }
+}
+section.jobs .open-jobs .item h3.job-title span.job-status, section.jobs .open-jobs .item .job-title.h3 span.job-status {
+  display: inline-block;
+  font-size: 15px;
+  padding: 2px 15px;
+  background-color: #EFF8FF;
+  margin-left: 14px;
+  border-radius: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #26A7DF;
+}
+section.jobs .open-jobs .item h3.job-title span.job-status::before, section.jobs .open-jobs .item .job-title.h3 span.job-status::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-size: 8px;
+  line-height: 20px;
+  margin-right: 6px;
+}
+section.jobs .open-jobs .item .short-description {
+  margin-bottom: 30px;
+}
+section.jobs .open-jobs .item .type-salary ul {
+  margin: 0;
+}
+section.jobs .open-jobs .item .type-salary ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+section.jobs .open-jobs .item .type-salary ul li:last-child {
+  margin-right: 0;
+}
+section.jobs .open-jobs .item .type-salary ul li .icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+section.jobs .open-jobs .item .job-location {
+  background: #F2F4F7;
+  mix-blend-mode: multiply;
+  border-radius: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 10px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+@media (max-width: 767px) {
+  section.jobs .open-jobs .item .job-location {
+    position: relative;
+    margin: 5px 0 10px;
+    top: 0;
+    left: 0;
+  }
+}
+section.jobs .open-jobs .item .job-location .flag {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+}
+
 footer.footer {
   padding: 80px 0;
 }
@@ -18918,7 +19579,7 @@ footer.footer .contact ul {
 }
 footer.footer .contact ul li {
   padding-bottom: 10px;
-  display: inline-block;
+  display: block;
 }
 @media (max-width: 767px) {
   footer.footer .contact ul li {
@@ -18928,12 +19589,21 @@ footer.footer .contact ul li {
 footer.footer .contact ul li a {
   text-decoration: none;
   color: #353535;
+  display: flex;
 }
 footer.footer .contact ul li a span.icon {
   width: 24px;
   height: 20px;
   display: inline-block;
   margin-right: 50px;
+}
+@media (max-width: 991px) {
+  footer.footer .contact ul li a span.icon {
+    margin-right: 15px;
+  }
+}
+footer.footer .contact ul li a span.icon + span {
+  word-break: break-all;
 }
 footer.footer .contact ul li a storng {
   font-weight: 700;

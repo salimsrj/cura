@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-3 col-lg-4 col-xl-4">
 				<div class="widget">
 					<div class="footer-logo">
 						<img src="<?php echo get_stylesheet_directory_uri();?>/images/logo-black.png" alt="cura logo black">
@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-5 col-lg-4 col-xl-3">
 				<div class="widget">
 					<div class="contact">
 						<ul>
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-md-4 col-lg-4 col-xl-5">
 				<div class="footer-widget">
 					<div class="footer-menu">
 						<ul>

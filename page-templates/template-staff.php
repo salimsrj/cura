@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="content-box">
                         <h2 class="title">Secure <span>Top Performers</span> To Grow Your Business</h2>
                         <div class="btn-container">
-                            <a href="#" class="btn btn-blue">Contact Us</a>
+                            <a href="/contact-us/" class="btn btn-blue">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="content">
                             <p>Employers spend countless hours sourcing candidate and sifting through applicants. Time
                                 that could be better focused elsewhere.</p>
-                            <p>We are a US-based Rec2Rec Agency.</p>
-                            <p> Our staff are experts in those niche fields and know
+                            <p>We are a US-based Rec2Rec Agency.<br>
+                            Our staff are experts in those niche fields and know
                                 the nuances your industry experiences. Our easy-going team will collaborate with you to
                                 ensure you focus your energy only on the most qualified candidates who suit your needs
                                 and can get right to work once hired.</p>
@@ -49,8 +49,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                     <div class="buttons-container">
                         <ul>
-                            <li><a href="#" class="btn btn-blue">Log in</a></li>
-                            <li><a href="#" class="btn btn-blue">Register</a></li>
+                            <li><a href="/login/" class="btn btn-blue">Log in</a></li>
+                            <li><a href="/register/" class="btn btn-blue-fill">Register</a></li>
                         </ul>
                     </div>
                     <div class="left-image-box">
@@ -95,7 +95,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                             segments including Directors, Business Developers, Account Managers,
                                             Recruiters, and more around the country with ease. </p>
                                     </div>
-                                    <a href="#" class="learn-more">Learn More</a>
+                                    <a href="/cura-search/" class="learn-more">Learn More</a>
                                 </div>
                             </div>
                             <div class="contact-box">
@@ -103,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <div class="content">
                                     <p>It’s impossible to fit all our services and strengths into a website! If you have a question or concern, we want to know. Contact us and we will respond with a prompt and efficient manner.</p>
                                 </div>
-                                <a href="#" class="btn btn-contact">CONTACT US</a>
+                                <a href="/contact-us/" class="btn btn-contact">CONTACT US</a>
                             </div>
                         </div>
                     </div>

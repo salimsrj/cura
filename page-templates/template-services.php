@@ -23,14 +23,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h2 class="title">We Make Sourcing Simple.</h2>
                         <div class="content">
                             <p>Companies and candidates can trust and rely on us to source or find precisely what they
-                                need. Our seasoned professional staff has both hands-on experience in a wide variety of
+                                need.<br>Our seasoned professional staff has both hands-on experience in a wide variety of
                                 fields and an array of networking connections to help find the right fit for every
                                 applicant. </p>
                         </div>
                         <div class="buttons">
                             <ul>
-                                <li><a href="#" class="btn btn-blue">Recruiting</a></li>
-                                <li><a href="#" class="btn btn-green">Accounting & Finance</a></li>
+                                <li><a href="/cura-search/find-a-career/" class="btn btn-blue">Recruiting</a></li>
+                                <li><a href="/accounting/" class="btn btn-green">Accounting & Finance</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     your next staff member, our platform will highlight the best options available for
                                     YOU. </p>
                             </div>
-                            <a href="#" class="link">Learn More</a>
+                            <a href="/cura-search/" class="link">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     with companies and their Hiring Managers to ensure we place the right candidate in
                                     the correct positions!</p>
                             </div>
-                            <a href="#" class="link">Learn More</a>
+                            <a href="/accounting/" class="link">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div class="step-text"><span>Fill<br>Rate</span></div>
                         </li>
                         <li>
-                            <span class="qty">100S</span>
+                            <span class="qty">100s</span>
                             <div class="step-text"><span>Positions to choose from</span></div>
                         </li>
                         <li>
@@ -144,7 +144,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div>
                         <h2 class="title">Unsure or Have Questions?</h2>
                         <div class="button-container">
-                            <a href="#" class="btn btn-contact">CONTACT US</a>
+                            <a href="/contact-us/" class="btn btn-contact">CONTACT US</a>
                         </div>
                     </div>
                 </div>

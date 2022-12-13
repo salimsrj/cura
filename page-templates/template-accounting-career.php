@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                         <div class="btns-container">
                             <ul>
-                                <li><a href="#" class="btn btn-green">Register</a></li>
+                                <li><a href="/register/" class="btn btn-green">Register</a></li>
                             </ul>
                         </div>
                     </div>
@@ -52,14 +52,14 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <li>
                                     <article>
                                         <h3 class="title">Professionalism</h3>
-                                        <p>The Cura Accounting & Finance team is full of proven, high-performing
+                                        <p>The Cura Accounting & Finance team is full of proven,<br>high-performing
                                             professionals that stand out amongst the rest.</p>
                                     </article>
                                 </li>
                                 <li>
                                     <article>
                                         <h3 class="title">Availability</h3>
-                                        <p>Availability is the best ability. With lightning-fast response time, every
+                                        <p>Availability is the best ability. With lightning-fast response<br>time, every
                                             caller is a priority.</p>
                                     </article>
                                 </li>
@@ -74,9 +74,316 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                     </div>
 
-                    <div class="img-box">
-                        <div class="image-container">
-                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/Search-engine.jpg" alt="">
+                    <div class="cura-jobs">
+                        <div class="cura-jobs-container">
+                            <!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/Search-engine.jpg" alt=""> -->
+                            <div class="jobs-box">
+
+
+                                <div class="job-head">
+                                    <h2 class="title">Open positions</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="job-search-box">
+                                    <div class="job-search">
+                                        
+                                        <div class="short-by">
+                                            <div class="left-box">
+                                                <label for="sortby" class="">Sort by:</label>
+                                            </div>
+                                            <div class="right-box">
+                                                <select class="form-select form-control"
+                                                    aria-label="Default select example">
+                                                    <option selected>Most Recent</option>
+                                                    <option value="1">Full-Time</option>
+                                                    <option value="2">Hourly</option>
+                                                    <option value="3">Salary</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="open-jobs">
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Las Vegas, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">Posted 3 days ago</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Remote, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">New</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Remote, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">New</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Remote, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">New</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Remote, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">New</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Remote, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">New</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+                                        <div class="item">
+                                            <article>
+                                                <a href="#">
+                                                    <h3 class="job-title">Engineering Manager</h3>
+                                                </a>
+                                                <ul>
+                                                    
+                                                    <li>
+                                                    <div class="job-location">
+                                                    <span class="flag">
+                                                        <img
+                                                            src="<?php echo get_stylesheet_directory_uri();?>/images/usa.png"
+                                                            alt=""></span><span>Remote, USA</span> 
+                                                            
+                                                    </div>
+                                                    </li>
+                                                    <li><span class="job-status">New</span></li>
+                                                </ul>
+                                                
+                                                <div class="short-description">
+                                                    <p>We’re looking for an experienced engineering manager to join our
+                                                        team.</p>
+                                                </div>
+                                                <div class="type-salary">
+                                                    <ul>
+                                                        <li class="type"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-clock.png"
+                                                                    alt=""></span>Full-time</li>
+                                                        <li class="salary"><span class="icon"><img
+                                                                    src="<?php echo get_stylesheet_directory_uri();?>/images/icon-usd.png"
+                                                                    alt=""></span>$80k - $100k</li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </article>
+                                        </div>
+
+
+                                     
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -107,7 +414,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 </div>
             </div>
-            <div class="col-md-6 align-items-end">
+            <div class="col-md-6 d-md-flex align-items-end">
                 <div class="candidates-testimonials">
                     <h2 class="title">People who have <span>already chosen Cura</span></h2>
                     <div class="testimonial">
@@ -142,8 +449,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <h2 class="title">Let Cura help you achieve your goal.</h2>
                     <div class="btn-container">
                         <ul>
-                            <li><a href="#" class="btn btn-blue-green">CONTACT US</a></li>
-                            <li><a href="#" class="btn btn-find-job">Find A Job</a></li>
+                            <li><a href="/contact-us/" class="btn btn-blue-green">CONTACT US</a></li>
+                            <li><a href="/accounting/find-a-career/" class="btn btn-find-job">Find A Job</a></li>
                         </ul>
                     </div>
                 </div>
@@ -160,7 +467,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Cura works within the Finance & Accounting industry within the city of Las Vegas.</p>
+                                    <p>Cura works within the Finance & Accounting industry within the city of Las Vegas.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +482,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>No! Cura works with all types of Accounting & Finance individuals, whether they are CPA certified or not.</p>
+                                    <p>No! Cura works with all types of Accounting & Finance individuals, whether they
+                                        are CPA certified or not.</p>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +497,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Correct, Cura’s team solely focuses on finding talent for Vegas businesses or Vegas branches. This emphasis allows us to have the best possible read on the market in the city.</p>
+                                    <p>Correct, Cura’s team solely focuses on finding talent for Vegas businesses or
+                                        Vegas branches. This emphasis allows us to have the best possible read on the
+                                        market in the city.</p>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +514,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>We have placed candidates on the same day before; it depends on the availability of the candidate and client. An average timeline is usually one week to one and half weeks from presentation to offer.</p>
+                                    <p>We have placed candidates on the same day before; it depends on the availability
+                                        of the candidate and client. An average timeline is usually one week to one and
+                                        half weeks from presentation to offer.</p>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +532,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Yes! Cura only works in the city of Las Vegas and fully understands market trends as well as client budgets. We make this as easy and painless as possible for you!</p>
+                                    <p>Yes! Cura only works in the city of Las Vegas and fully understands market trends
+                                        as well as client budgets. We make this as easy and painless as possible for
+                                        you!</p>
                                 </div>
                             </div>
                         </div>
@@ -228,13 +543,15 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <h2 class="accordion-header" id="heading6">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                    How does Cura help me fit in my new position? 
+                                    How does Cura help me fit in my new position?
                                 </button>
                             </h2>
                             <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>By understanding our clients and how they operate, we get the best possible understanding of who will perform well at the opportunity. Cura will also check in with you for the first month or two to ensure everything is going well!</p>
+                                    <p>By understanding our clients and how they operate, we get the best possible
+                                        understanding of who will perform well at the opportunity. Cura will also check
+                                        in with you for the first month or two to ensure everything is going well!</p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +567,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Cura specializes in bettering one or each of compensation, growth, and flexibility for our candidates.</p>
+                                    <p>Cura specializes in bettering one or each of compensation, growth, and
+                                        flexibility for our candidates.</p>
                                 </div>
                             </div>
                         </div>

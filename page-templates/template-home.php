@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-<section class="home-banner" style="background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.5) 15%, rgba(0,0,0,.2) 30%, rgba(0,0,0,.2) 30%), url(<?php echo get_stylesheet_directory_uri();?>/images/LionVideo.jpg); background-size: cover; background-position: top center;">
+<section class="home-banner" style="background: linear-gradient(to bottom, rgba(53, 53, 53, 0.6), rgba(53, 53, 53, 0.6) 15%, rgba(53, 53, 53, 0.6) 30%, rgba(53, 53, 53, 0.6) 30%), url(<?php echo get_stylesheet_directory_uri();?>/images/LionVideo.png); background-size: cover; background-position: top center;">
     <div class="container">
         <div class="row">
             <div class="col-12 banner-col">
@@ -24,8 +24,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                         <div class="buttons">
                             <ul>
-                                <li><a href="#" class="btn btn-blue">Search</a></li>
-                                <li><a href="#" class="btn btn-green">Accounting & Finance</a></li>
+                                <li><a href="/cura-search/" class="btn btn-blue">Search</a></li>
+                                <li><a href="/accounting/" class="btn btn-green">Accounting & Finance</a></li>
                             </ul>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 
-<section class="who-we-are" style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/CURA-text.png); background-size: 50%; background-position: bottom right; background-repeat: no-repeat;">
+<section class="who-we-are" style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/CURA-text.png); background-size: 60%; background-position: bottom right; background-repeat: no-repeat;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <p>Filling the careers of tomorrow takes expertise, vision, and a personal touch. Sourcing talented individuals with the right skills to make companies efficient and profitable is essential.  We are experts in staffing and know how to fill those notoriously difficult niche positions. </p>
                     </div>
                     <div class="button-container">
-                        <a href="#" class="btn btn-blue">ABOUT US</a>
+                        <a href="/about/" class="btn btn-blue">ABOUT US</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p>As a Rec2Rec Firm, we place all positions within the staffing industry. We partner with Staffing Agencies to help them grow their ranks and profits by finding ideal, top-performing candidates. 
                             Looking for a new position? Narrow  your inquiry by location, niche, or job type to connect with all our existing options.</p>
                         </div>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <a href="/cura-search/" class="learn-more">Learn More</a>
                     </div>
 
                     <div class="box boxstyle-2">
@@ -86,7 +86,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="content">
                             <p>We designed this platform for Accounting and Finance professionals and employers. Regardless of the size of your business or industry, we will find outstanding options to fill your open positions.  We help place a wide range of positions from Accountants and Analysts to Controllers, CFOs, and more!</p>
                         </div>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <a href="/accounting/" class="learn-more">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -166,8 +166,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="right-box">
                         <div class="buttons">
                             <ul>
-                                <li><a class="btn btn-blue" href="#">Recruiting</a></li>
-                                <li><a class="btn btn-green" href="#">Accounting & Finance</a></li>
+                                <li><a class="btn btn-blue" href="/cura-search/find-a-career/">Recruiting</a></li>
+                                <li><a class="btn btn-green" href="/accounting/">Accounting & Finance</a></li>
                             </ul>
                         </div>
                         <h2 class="title"><span>Cura</span> At Work - State by State</h2>
@@ -194,7 +194,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h2 class="title"><span>Cura</span> helps you achieve your goals.</h2>
                         <h3 class="sub-title">Want to see how?</h3>
                         <div class="button-container">
-                            <a href="#" class="btn btn-contact">CONTACT US</a>
+                            <a href="/contact-us/" class="btn btn-contact">CONTACT US</a>
                         </div>
                     </div>
                 </div>                

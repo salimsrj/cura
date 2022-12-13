@@ -23,8 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h2 class="title">Seeking <span>A&F</span> Professionals and Positions in Las Vegas</h2>
                         <div class="btns-container">
                            <ul>
-                                <li><a href="#" class="btn btn-green-fill">Find a career</a></li>
-                                <li><a href="#" class="btn btn-green">Find staff</a></li>
+                                <li><a href="/accounting/find-a-career/" class="btn btn-green-fill">Find a career</a></li>
+                                <li><a href="/accounting/find-staff/" class="btn btn-green">Find staff</a></li>
                            </ul>
                         </div>
                     </div>
@@ -103,10 +103,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 </div>
                                 <ul>
                                     <li>
-                                        <a href="#" class="btn btn-green">Log in</a>                                       
+                                        <a href="/login/" class="btn btn-green">Log in</a>                                       
                                     </li>
                                     <li>
-                                        <a href="#" class="btn btn-green-fill">Register</a>
+                                        <a href="/register/" class="btn btn-green-fill">Register</a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,8 +123,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-12">
                 <div class="contact-box">
                     <ul>
-                        <li><span class="title">Let Cura get to know you</span> <span class="arrow"><img src="<?php echo get_stylesheet_directory_uri();?>/images/arrow-right.png" alt=""></span></li>
-                        <li><a href="#" class="btn btn-contact">CONTACT US</a></li>
+                        <li><span class="title">It’s time to talk</span> <span class="arrow"><img src="<?php echo get_stylesheet_directory_uri();?>/images/arrow-right.png" alt=""></span></li>
+                        <li><a href="/contact-us/" class="btn btn-contact">CONTACT US</a></li>
                     </ul>
                 </div>
             </div>

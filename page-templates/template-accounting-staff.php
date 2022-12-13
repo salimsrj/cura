@@ -14,7 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <section class="inner-banner style-5"
-    style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/banner-staff-2.jpg); background-size: cover; background-position: center center;">
+    style="background: url(<?php echo get_stylesheet_directory_uri();?>/images/banner-staff-2.jpg); background-size: cover; background-position: top center;">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -24,8 +24,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h2 class="title">We Have The Candidates You Need.</h2>
                         <div class="btns-container">
                             <ul>
-                                <li><a href="#" class="btn btn-green-fill">Find a career</a></li>
-                                <li><a href="#" class="btn btn-green">Find staff</a></li>
+                                <li><a href="/accounting/find-a-career/" class="btn btn-green-fill">Find a career</a></li>
+                                <li><a href="/accounting/find-staff/" class="btn btn-green">Find staff</a></li>
                             </ul>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <p>Every company in Las Vegas could use us on their team!.</p>
                             <p>If you want to grow, add more staff, and ease your workload, reach out to us today to get responses from the highest-qualified candidates in the area.</p>
                         </div>
-                        <a href="#" class="learn-more">Learn More</a>
+                        <a href="/accounting/" class="learn-more">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="content-box">
                     <h2 class="title"><span>Skip</span> the searches that lead nowhere.</h2>
                     <div class="content"><p>Our targeted approach to only Accounting & Finance positions here in Las Vegas helps narrow down candidates. It gets you the best possible results based on availability. Some jobs take longer to fill, and that’s ok! We stay by your side from start to finish until you find exactly what you’re looking for. </p></div>
-                    <a href="#" class="btn btn-contact">CONTACT US</a>
+                    <a href="/contact-us/" class="btn btn-contact">CONTACT US</a>
                 </div>
             </div>
         </div>
